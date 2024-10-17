@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g stroke="#000" stroke-width="1.188">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M21.25 11.275v10.907c0 .682-.56 1.235-1.25 1.235H1.25c-.69 0-1.25-.553-1.25-1.235V4.635L4.39.06 19.996 0c.69-.002 1.252.548 1.255 1.23v10.045z" transform="translate(-359.000000, -863.000000) translate(359.000000, 863.000000) translate(0.000000, 0.308642) translate(12.500000, 12.345679) scale(-1, 1) translate(-12.500000, -12.345679) translate(1.875000, 0.617276)"/>
+                            <path stroke-linejoin="round" d="M4.391 0.06L4.391 4.635 0 4.635z" transform="translate(-359.000000, -863.000000) translate(359.000000, 863.000000) translate(0.000000, 0.308642) translate(12.500000, 12.345679) scale(-1, 1) translate(-12.500000, -12.345679) translate(1.875000, 0.617276)"/>
+                        </g>
+                        <path d="M19.981 3.843L15.781 3.858M19.844 6.327L9.219 6.327" transform="translate(-359.000000, -863.000000) translate(359.000000, 863.000000) translate(0.000000, 0.308642) translate(12.500000, 12.345679) scale(-1, 1) translate(-12.500000, -12.345679)"/>
+                        <g>
+                            <path d="M20.406 5.093L0 5.108M20.406.154L0 .17M20.406 10.031L0 10.046M6.719.482L6.719 14.333M14.219.482L14.219 14.333" transform="translate(-359.000000, -863.000000) translate(359.000000, 863.000000) translate(0.000000, 0.308642) translate(12.500000, 12.345679) scale(-1, 1) translate(-12.500000, -12.345679) translate(2.187500, 9.259259)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

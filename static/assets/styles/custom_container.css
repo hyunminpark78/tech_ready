@@ -1,0 +1,28 @@
+.container .-wrapper.fitting->*,
+.container .fitting-.--wrapper-between>*,
+.container .fitting-.--wrapper-end>*,
+.container .fitting-.--wrapper-h-center>*,
+.container .fitting-.--wrapper-h-v-center>*,
+.container .fitting-.--wrapper-stretch>*,
+.container .fitting-.--wrapper-v-center>*,
+.container .fitting-.--wrapper>*,
+.container .fitting-.-wrapper-3to7>*,
+.container .fitting-.-wrapper-7to3>*,
+.container .fitting-.-wrapper-between>*,
+.container .fitting-.-wrapper-end>*,
+.container .fitting-.-wrapper-h-center>*,
+.container .fitting-.-wrapper-h-v-center>*,
+.container .fitting-.-wrapper-half>*,
+.container .fitting-.-wrapper-quarter>*,
+.container .fitting-.-wrapper-stretch>*,
+.container .fitting-.-wrapper-v-center>*,
+.container article.fitting-.-wrapper-tile>*,
+.container section.fitting-.-wrapper-tile>* {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto
+}
+
+
+.container .-bg-transparent {
+  background-color: transparent !important;
+}

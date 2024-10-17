@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <mask id="r6vo41i9ma" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="3" width="31" height="28">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3h31v28H0V3zm15 22.778A7.7 7.7 0 1 1 27.318 17H29v12H15v-3.222z" fill="#D9D9D9"/>
+    </mask>
+    <g mask="url(#r6vo41i9ma)" stroke="#666" stroke-width="1.2">
+        <path d="M3.6 12.6h3.8v13.8H3.6zM10.6 10.6h3.8v15.8h-3.8zM17.6 4.6h3.8v21.8h-3.8zM24.6 6.6h3.8v19.8h-3.8z"/>
+    </g>
+    <circle cx="20.314" cy="20.314" r="7.4" transform="rotate(45 20.314 20.314)" stroke="#666" stroke-width="1.2"/>
+    <circle cx="20.314" cy="20.314" r="4.4" transform="rotate(45 20.314 20.314)" stroke="#666" stroke-width="1.2"/>
+    <mask id="vubzzw2tob" fill="#fff">
+        <path d="M26.166 24.361a1 1 0 0 1 1.414 0l2.121 2.122a2 2 0 0 1 0 2.828l-.046.047a2 2 0 0 1-2.829 0l-2.828-2.829 2.168-2.168z"/>
+    </mask>
+    <path d="M26.166 24.361a1 1 0 0 1 1.414 0l2.121 2.122a2 2 0 0 1 0 2.828l-.046.047a2 2 0 0 1-2.829 0l-2.828-2.829 2.168-2.168z" stroke="#666" stroke-width="2.4" mask="url(#vubzzw2tob)"/>
+</svg>

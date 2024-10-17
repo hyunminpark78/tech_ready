@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="12px" viewBox="0 0 19 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico_flip</title>
+    <g id="Cloudradar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OCP-dashboard_수정" transform="translate(-898.000000, -524.000000)">
+            <g id="맞춤분석-및-예측" transform="translate(361.188021, 443.000000)">
+                <g id="block_02" transform="translate(0.000000, 48.000000)">
+                    <g id="Group-8" transform="translate(30.015625, 30.000000)">
+                        <g id="Group-40" transform="translate(306.796354, 1.000000)">
+                            <g id="Group-65" transform="translate(111.000000, 0.000000)">
+                                <g id="Group-5" transform="translate(89.000000, 2.000000)">
+                                    <g id="Group-21" transform="translate(1.988357, 1.001070)">
+                                        <path d="M12.0189344,5 L12.0189344,5 L12.0189344,7.99892975 C12.0189344,9.10349925 11.1230376,9.99892975 10.0178928,9.99892975 L4.01476776,9.99892975 C2.90962296,9.99892975 2.01372609,9.10349925 2.01372609,7.99892975 L2.01372609,5.02981376 L2.01372609,5.02981376" id="Path" stroke="#999999" stroke-linecap="round" stroke-dasharray="2"></path>
+                                        <path d="M12.0189344,0 L12.0189344,0 L12.0189344,2.99892975 C12.0189344,4.10349925 11.1230376,4.99892975 10.0178928,4.99892975 L4.01476776,4.99892975 C2.90962296,4.99892975 2.01372609,4.10349925 2.01372609,2.99892975 L2.01372609,0.029813763 L2.01372609,0.029813763" id="Path" stroke="#999999" transform="translate(7.016330, 2.499465) rotate(-180.000000) translate(-7.016330, -2.499465) "></path>
+                                        <line x1="0" y1="5.09653663" x2="14.208529" y2="5.09653663" id="Path-4" stroke="#979797" stroke-linecap="round"></line>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="16px" viewBox="0 0 13 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="guide-Toggles2" transform="translate(-336.000000, -439.000000)" stroke="#B0B6BD">
+            <g id="01_ATOM/Toggle/Pin/basic-checked-Copy" transform="translate(334.000000, 439.000000)">
+                <path d="M10.9576617,1.93382276 L5.04277397,1.93382276 L5.46319055,7.04980637 C4.40967666,8.29415165 3.99899288,9.57272011 3.64387742,10.9338228 L7.31180225,10.9338228 L8.20881752,13.5689528 L8.63749172,10.9338228 L12.3492518,10.9338228 C11.9788749,9.57353087 11.5364194,8.23167431 10.5414671,7.04858048 L10.9576617,1.93382276 Z" id="Path" transform="translate(8.000000, 8.683823) rotate(25.000000) translate(-8.000000, -8.683823) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

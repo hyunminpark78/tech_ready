@@ -1,0 +1,9 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path clip-rule="evenodd" d="m18.069 12 .308 1.198c.502.119.963.344 1.359.651l1.016-.474.706.874-.68.912c.211.454.329.958.329 1.492v.074l.893.456-.253 1.095-1.046.025a3.565 3.565 0 0 1-1 1.179l.232 1.101-1.01.493-.783-.921a3.647 3.647 0 0 1-1.283-.022l-.788.938-1.01-.494.245-1.183a3.56 3.56 0 0 1-.898-1.107l-1.155-.021L13 17.17l1.008-.521c0-.503.105-.982.294-1.415l-.75-.996.707-.873 1.097.503c.374-.297.81-.52 1.284-.646L16.946 12h1.123z" stroke="#fff" stroke-width="1.188" stroke-linejoin="round"/>
+    <path clip-rule="evenodd" d="M18.285 15.52a1.454 1.454 0 1 0 .648 1.21c.006-.502-.21-.905-.648-1.21z" stroke="#fff" stroke-width="1.188" stroke-linecap="round"/>
+    <path d="M20 10V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h6" stroke="#fff" stroke-width="1.19" stroke-linecap="round"/>
+    <path fill="#fff" d="M4 8h16v1.19H4z"/>
+    <circle cx="6.5" cy="6.5" r=".5" fill="#fff"/>
+    <circle cx="8.5" cy="6.5" r=".5" fill="#fff"/>
+    <circle cx="10.5" cy="6.5" r=".5" fill="#fff"/>
+</svg>

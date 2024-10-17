@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="584" height="293" viewBox="0 0 584 293">
+    <g fill="none" fill-rule="evenodd" opacity=".15">
+        <g>
+            <g>
+                <g>
+                    <g stroke="#BCD7E1">
+                        <path d="M0 124.78L524.377 124.78M261.877 0L261.877 249.559" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(30.623364, 14.440917)"/>
+                    </g>
+                    <g>
+                        <g>
+                            <text fill="#4A4A4A" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="14" font-weight="400" letter-spacing="-.023" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(1.304624, 0.000000)">
+                                <tspan x="0" y="13">Critical alerts</tspan>
+                            </text>
+                            <g fill="#E02020">
+                                <text font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="24" font-weight="bold" letter-spacing="-.04" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(1.304624, 0.000000) translate(81.903311, 34.093705)">
+                                    <tspan x="28.03" y="22">8</tspan>
+                                </text>
+                                <g>
+                                    <path d="M3.433 16.275c-.525 0-.853-.569-.59-1.023L9.16 4.34c.263-.453.917-.453 1.18 0l6.317 10.912c.263.454-.065 1.023-.59 1.023H3.433c-.35 0-.35 0 0 0zm6.999-2.047h-.638l-.044.002c-.015 0-.03 0-.044-.002h-.638v-1.363h1.364v1.363zm0-2.725H9.068v-3.41h1.364v3.41z" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(1.304624, 0.000000) translate(81.903311, 34.093705) translate(0.000000, 4.025480)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <text fill="#4A4A4A" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="14" font-weight="400" letter-spacing="-.023" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(0.000000, 124.143790)">
+                                <tspan x="0" y="13">Medium alerts</tspan>
+                            </text>
+                            <g fill="#FA6400">
+                                <text font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="24" font-weight="bold" letter-spacing="-.04" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(0.000000, 124.143790) translate(83.207935, 37.949914)">
+                                    <tspan x="28.03" y="22">0</tspan>
+                                </text>
+                                <g transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(0.000000, 124.143790) translate(83.207935, 37.949914) translate(0.000000, 4.025480)">
+                                    <circle cx="10" cy="10" r="6"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <text fill="#4A4A4A" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="14" font-weight="400" letter-spacing="-.023" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(263.059447, 125.143790)">
+                                <tspan x="0" y="13">Low alerts</tspan>
+                            </text>
+                            <g fill="#FA6400">
+                                <text font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="24" font-weight="bold" letter-spacing="-.04" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(263.059447, 125.143790) translate(89.148488, 33.949914)">
+                                    <tspan x="28.03" y="22">8</tspan>
+                                </text>
+                                <g fill-rule="nonzero">
+                                    <path d="M4.75 18l11-7-11-7v14z" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(263.059447, 125.143790) translate(89.148488, 33.949914) translate(0.000000, 4.025480) translate(10.250000, 11.000000) rotate(-270.000000) translate(-10.250000, -11.000000)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <g fill="#E02020">
+                                <text font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="24" font-weight="bold" letter-spacing="-.04" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(262.542891, 0.119548) translate(84.665044, 33.974157)">
+                                    <tspan x="28.522" y="22">28</tspan>
+                                </text>
+                                <g fill-rule="nonzero">
+                                    <path d="M4.75 16l11-7-11-7v14z" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(262.542891, 0.119548) translate(84.665044, 33.974157) translate(0.000000, 4.025480) translate(10.250000, 9.000000) rotate(-90.000000) translate(-10.250000, -9.000000)"/>
+                                </g>
+                            </g>
+                            <text fill="#4A4A4A" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="14" font-weight="400" letter-spacing="-.023" transform="translate(-360.000000, -3860.000000) translate(360.000000, 3779.000000) translate(0.000000, 81.000000) translate(50.042065, 34.880815) translate(262.542891, 0.119548)">
+                                <tspan x="0" y="13">High alerts</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

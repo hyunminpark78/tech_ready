@@ -1,0 +1,142 @@
+.vue-daterange-picker {
+  display: block !important;
+}
+
+.reportrange-text {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.daterangepicker div.calendars {
+  flex-wrap: inherit;
+}
+
+.daterangepicker .ranges {
+  text-align: center;
+}
+
+.daterangepicker td.start-date,
+.daterangepicker td.end-date,
+.daterangepicker td.start-date.end-date {
+  border-radius: 0;
+}
+
+.daterangepicker td.in-range {
+  background-color: #357ebd;
+  color: #fff;
+}
+
+.daterangepicker.openscenter {
+  margin-left: 85px;
+}
+
+.daterangepicker .ranges li {
+  padding: 15px 12px !important;
+}
+
+.daterangepicker .ranges li:not(.active):hover {
+  background-color: #eefaff !important;
+}
+
+/* Ethan 0728 */
+.daterangepicker .ranges li.active {
+  background-color: #00a5ed;
+}
+
+.daterangepicker .ranges li.active ~ li.active {
+  background-color: #00a5ed;
+}
+
+.daterangepicker .ranges li {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.daterangepicker {
+  border: 1px solid #e3ebf1;
+  box-shadow: 0 2px 6px 0 rgb(0 165 237 / 22%);
+}
+
+.daterangepicker,
+.daterangepicker * {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+
+.daterangepicker .calendar-table td, 
+.daterangepicker .calendar-table th {
+  font-size: 13px;
+  color: #4a4a4a;
+  height: 36px;
+}
+
+.daterangepicker .calendar-table tbody tr:first-child td, 
+.daterangepicker .calendar-table tbody tr:first-child th {
+  color: #666;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.daterangepicker td.off, 
+.daterangepicker td.off.end-date, 
+.daterangepicker td.off.in-range, 
+.daterangepicker td.off.start-date {
+  color: #ccc;
+}
+
+.daterangepicker td.in-range {
+  background-color: #eefaff !important;
+  color: #4a4a4a !important;
+}
+
+.daterangepicker td.end-date, 
+.daterangepicker td.start-date, 
+.daterangepicker td.start-date.end-date {
+  background-color: #00a5ed !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+}
+
+.daterangepicker td.start-date {
+  border-radius: 50% 0 0 50% !important;
+}
+
+.daterangepicker td.end-date {
+  border-radius: 0 50% 50% 0 !important
+}
+
+.daterangepicker td.today {
+  border-radius: 50% !important;
+  background-color: #44d7b6 !important;
+  color: #fff !important;
+}
+
+.daterangepicker td.end-date.today {
+  border-radius: 0 50% 50% 0 !important
+}
+
+
+/* .ag-header-cell-sortable .ag-sort-descending-icon {
+  background: url(/assets/ag-grid/ico-sort-down.svg) 0 0 no-repeat;
+  background-size: 14px 13px;
+} */
+
+.vue-daterange-picker .show-ranges.hide-calendars {
+  width: 190px !important;
+}
+
+.vue-daterange-picker .daterangepicker .flex.justify-center {
+  padding: 20px 0;
+  /* border-top: 1px solid #e3ebf1; */
+}
+
+.daterangepicker.show-ranges .drp-calendar.left {
+  border-left: 1px solid #e3ebf1 !important;
+}
+
+.footer-text {
+  border-top: 1px solid #e3ebf1;
+  padding: 10px 0 0 10px;
+}
+.footer-text span {
+  font-size: 12px;
+}

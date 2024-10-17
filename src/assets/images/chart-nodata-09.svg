@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="584" height="293" viewBox="0 0 584 293">
+    <defs>
+        <linearGradient id="rhz4gztgsa" x1="50%" x2="50%" y1="13.632%" y2="50%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g opacity=".15">
+                        <path fill="#2CC2FD" d="M-0.349 58.927H50.651V210.927H-0.349z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(179.348624, 104.073394)"/>
+                        <path fill="#1AE3BB" d="M-0.349 37.927H50.651V57.927H-0.349z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(179.348624, 104.073394) translate(25.151376, 47.926606) scale(1, -1) translate(-25.151376, -47.926606)"/>
+                        <path fill="#FC5AA1" d="M-0.349 22.927H50.651V37.927H-0.349z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(179.348624, 104.073394)"/>
+                        <path fill="#A166F1" d="M-0.349 12.927H50.651V22.927H-0.349z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(179.348624, 104.073394) translate(25.151376, 17.926606) scale(1, -1) translate(-25.151376, -17.926606)"/>
+                        <path fill="#FCC426" d="M1.651-.073h47c1.105 0 2 .895 2 2v13h-51v-13c0-1.105.896-2 2-2z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(179.348624, 104.073394)"/>
+                    </g>
+                    <g opacity=".15">
+                        <path fill="#2CC2FD" d="M0.174 68.587H51.174V251.587H0.174z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(331.825688, 63.412844)"/>
+                        <path fill="#1AE3BB" d="M0.174 43.587H51.174V71.587H0.174z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(331.825688, 63.412844) translate(25.674312, 57.587156) scale(1, -1) translate(-25.674312, -57.587156)"/>
+                        <path fill="#FC5AA1" d="M0.174 27.587H51.174V45.587H0.174z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(331.825688, 63.412844)"/>
+                        <path fill="#A166F1" d="M0.174 15.587H51.174V28.587H0.174z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(331.825688, 63.412844) translate(25.674312, 22.087156) scale(1, -1) translate(-25.674312, -22.087156)"/>
+                        <path fill="#FCC426" d="M2.174.587h47c1.105 0 2 .896 2 2v13h-51v-13c0-1.104.896-2 2-2z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(331.825688, 63.412844)"/>
+                    </g>
+                    <g opacity=".15">
+                        <path fill="#2CC2FD" d="M-0.11 66.422H50.89V241.422H-0.11z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(103.110092, 73.577982)"/>
+                        <path fill="#1AE3BB" d="M-0.11 43.422H50.89V68.422H-0.11z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(103.110092, 73.577982) translate(25.389908, 55.922018) scale(1, -1) translate(-25.389908, -55.922018)"/>
+                        <path fill="#FC5AA1" d="M-0.11 25.422H50.89V43.422H-0.11z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(103.110092, 73.577982)"/>
+                        <path fill="#A166F1" d="M-0.11 15.422H50.89V28.422H-0.11z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(103.110092, 73.577982) translate(25.389908, 21.922018) scale(1, -1) translate(-25.389908, -21.922018)"/>
+                        <path fill="#FCC426" d="M1.89.422h47c1.104 0 2 .895 2 2v13h-51v-13c0-1.105.895-2 2-2z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(103.110092, 73.577982)"/>
+                    </g>
+                    <g opacity=".15">
+                        <path fill="#2CC2FD" d="M-0.064 76H50.936V277H-0.064z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(408.064220, 38.000000)"/>
+                        <path fill="#1AE3BB" d="M-0.064 49H50.936V79H-0.064z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(408.064220, 38.000000) translate(25.435780, 64.000000) scale(1, -1) translate(-25.435780, -64.000000)"/>
+                        <path fill="#FC5AA1" d="M-0.064 28H50.936V48H-0.064z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(408.064220, 38.000000)"/>
+                        <path fill="#A166F1" d="M-0.064 18H50.936V31H-0.064z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(408.064220, 38.000000) translate(25.435780, 24.500000) scale(1, -1) translate(-25.435780, -24.500000)"/>
+                        <path fill="#F9D685" d="M1.936 0h47c1.104 0 2 .895 2 2v16h-51V2c0-1.105.895-2 2-2z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(408.064220, 38.000000)"/>
+                    </g>
+                    <g opacity=".15">
+                        <path fill="#2CC2FD" d="M-0.587 63.174H50.413V226.174H-0.587z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(255.587156, 88.825688)"/>
+                        <path fill="#1AE3BB" d="M-0.587 40.174H50.413V63.174H-0.587z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(255.587156, 88.825688) translate(24.912844, 51.674312) scale(1, -1) translate(-24.912844, -51.674312)"/>
+                        <path fill="#FC5AA1" d="M-0.587 25.174H50.413V40.174H-0.587z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(255.587156, 88.825688)"/>
+                        <path fill="#A166F1" d="M-0.587 15.174H50.413V25.174H-0.587z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(255.587156, 88.825688) translate(24.912844, 20.174312) scale(1, -1) translate(-24.912844, -20.174312)"/>
+                        <path fill="#FCC426" d="M1.413.174h47c1.104 0 2 .896 2 2v13h-51v-13c0-1.104.895-2 2-2z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000) translate(255.587156, 88.825688)"/>
+                    </g>
+                    <path fill="url(#rhz4gztgsa)" d="M0 202H584V325H0z" transform="translate(-975.000000, -3456.000000) translate(975.000000, 3374.000000) translate(-1.000000, 82.000000)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,68 @@
+{
+  "icon": "ci-icon-asset",
+  "name": "Asset Management",
+  "routes": [
+    {
+      "name": "대시보드",
+      "path": "/home"
+    },
+
+    {
+      "name": "계약 정보",
+      "path": "/contract/info"
+    },
+
+
+    {
+      "path": "/sales/payment",
+      "name": "청구 정보"
+    },
+
+    {
+      "roles": ["PA", "BM", "BMM","BS"],
+      "name": "상품 정보",
+      "children": [
+        {
+          "path": "/product/list",
+          "name": "상품 목록"
+        },
+        {
+          "path": "/product/rank",
+          "name": "상품별 사용 비용"
+        },
+        {
+          "path": "/product/usedAmountProduct",
+          "name": "상품/회사별 사용료"
+        }
+      ]
+    },
+    {
+      "roles": ["AM"],
+      "path": "/product/rank",
+      "name": "상품별 사용 비용"
+    },
+    {
+      "roles": ["PA", "BM", "BMM","BS"],
+      "path": "/servicerequest/list",
+      "name": "SR 목록"
+
+    },
+    {
+      "name": "공지 사항",
+      "path": "/notice/list"
+    },
+    {
+      "roles": ["PA"],
+      "path": "/customer/list",
+      "name": "사용자 목록"
+
+    },
+    {
+      "roles": ["BM", "BMM","BS"],
+      "path": "/customer/list",
+      "name": "고객목록"
+
+    }
+
+  ]
+}

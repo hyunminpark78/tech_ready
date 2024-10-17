@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <g fill="none" fill-rule="evenodd">
+        <g stroke="#666" stroke-width="1.188">
+            <g>
+                <g>
+                    <g transform="translate(-742.000000, -928.000000) translate(360.000000, 908.000000) translate(382.000000, 20.000000) translate(1.562500, 0.625000)">
+                        <g>
+                            <path d="M1.805 0h9.526c.346 0 .625.28.625.625V6.25h0H1.18V.625C1.18.28 1.46 0 1.805 0z" transform="translate(4.375000, 15.381317)"/>
+                            <path d="M.313 6.181h12.5c.172 0 .312.14.312.313v.625c0 .517-.42.937-.938.937H.938C.42 8.056 0 7.636 0 7.12v-.625c0-.173.14-.313.313-.313z" transform="translate(4.375000, 15.381317)"/>
+                            <path d="M4.688 6.181H8.75v.625c0 .69-.56 1.25-1.25 1.25H5.937c-.69 0-1.25-.56-1.25-1.25v-.625h0z" transform="translate(4.375000, 15.381317)"/>
+                        </g>
+                        <rect width="21.875" height="6.875" rx="1.25"/>
+                        <circle cx="4.792" cy="3.385" r="1.406" transform="translate(4.791667, 3.385417) scale(1, -1) translate(-4.791667, -3.385417)"/>
+                        <path stroke-linecap="round" d="M10.781 12.969L10.781 15.287M10.781 7.031L10.781 9.531M14.844 2.5L17.735 2.5M14.844 4.375L17.735 4.375"/>
+                        <circle cx="10.797" cy="11.25" r="1.719"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

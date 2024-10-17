@@ -1,0 +1,47 @@
+.amchart-custom-tooltip {
+  max-width: 380px;
+  .flex-ui {
+    display: flex;
+    flex-direction: row;
+
+    &.center {
+      align-items: center;
+    }
+  }
+}
+
+.chart-lr-grid {
+  display: flex;
+  > * {
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+  &.center {
+    align-items: center;
+  }
+  > p:first-child {
+    width: 70%;
+    padding-left: 10px;
+    .legend-mark {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+    }
+    .legend-text {
+      display: block;
+      width: 90%;
+      word-break: break-all;
+      white-space: normal;
+    }
+  }
+  p:last-child {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.total {
+  border-top-width: 1px;
+  border-style: solid;
+}

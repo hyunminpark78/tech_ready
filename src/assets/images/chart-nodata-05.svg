@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="447" viewBox="0 0 1200 447">
+    <defs>
+        <linearGradient id="gat9x0127a" x1="50%" x2="50%" y1="-12.72%" y2="82.434%">
+            <stop offset="0%" stop-color="#57E3FF" stop-opacity=".502"/>
+            <stop offset="100%" stop-color="#2CC2FD" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="uyvkqu3h6b" x1="50%" x2="50%" y1="13.632%" y2="50%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g opacity=".15">
+                        <g>
+                            <path stroke="#BCD7E1" stroke-width="2.494" d="M1267 467.321L0 467.321 0 0" transform="translate(-360.000000, -1772.000000) translate(360.000000, 1691.000000) translate(-71.000000, 81.000000) translate(0.000000, 21.000000)"/>
+                            <path fill="#14A9E5" d="M0 212.966c102.104-22.028 191.04-36.05 266.806-42.067 75.767-6.017 159.213 8.005 250.339 42.067 57.305-25.966 141.653-39.55 253.044-40.753 111.39-1.201 275.886-1.64 493.487-1.314v127.517c-233.156-5.91-410.795-5.91-532.917 0-183.182 8.864-179.161 77.471-224.129 77.471-44.967 0-115.66-77.471-192.9-77.471-51.493 0-156.07 14.46-313.73 43.382V212.966z" opacity=".151" transform="translate(-360.000000, -1772.000000) translate(360.000000, 1691.000000) translate(-71.000000, 81.000000) translate(0.000000, 21.000000)"/>
+                            <g transform="translate(-360.000000, -1772.000000) translate(360.000000, 1691.000000) translate(-71.000000, 81.000000) translate(0.000000, 21.000000) translate(0.000000, 97.280899)">
+                                <path fill="url(#gat9x0127a)" stroke="#14A9E5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.989" d="M717.453 386.494L-11.21 386.494 195.833 13.146 391.666 88.829 506.63 244.517 717.453 28.921"/>
+                                <ellipse cx="506.63" cy="244.517" fill="#00A5ED" rx="10.515" ry="10.517"/>
+                                <ellipse cx="393.599" cy="92.022" fill="#00A5ED" rx="10.515" ry="10.517"/>
+                            </g>
+                            <path stroke="#14A9E5" stroke-dasharray="12.472" stroke-linecap="round" stroke-width="2.494" d="M0 278.036c138.928-12.282 231.828-25.321 278.702-39.117 46.874-13.796 123.021-.757 228.443 39.117 100.977-33.73 191.734-50.594 272.27-50.594h484.956" transform="translate(-360.000000, -1772.000000) translate(360.000000, 1691.000000) translate(-71.000000, 81.000000) translate(0.000000, 21.000000)"/>
+                            <g>
+                                <g transform="translate(-360.000000, -1772.000000) translate(360.000000, 1691.000000) translate(-71.000000, 81.000000) translate(0.000000, 21.000000) translate(185.937381, 97.280899) translate(515.211618, 10.516854)">
+                                    <ellipse cx="18.4" cy="18.404" fill="#FF8AD3" opacity=".497" rx="18.4" ry="18.404"/>
+                                    <ellipse cx="18.4" cy="18.404" fill="#FC5AA1" rx="10.515" ry="10.517"/>
+                                </g>
+                                <g fill="#FC5AA1" transform="translate(-360.000000, -1772.000000) translate(360.000000, 1691.000000) translate(-71.000000, 81.000000) translate(0.000000, 21.000000) translate(185.937381, 97.280899)">
+                                    <ellipse cx="10.515" cy="10.517" rx="10.515" ry="10.517"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <path fill="url(#uyvkqu3h6b)" d="M61 355H1261V478H61z" transform="translate(-360.000000, -1772.000000) translate(360.000000, 1691.000000) translate(-71.000000, 81.000000)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "num": 0,
+      "alarSepCd": "CVRG_STD",
+      "alarSepNm": "약정 커버리지 기준",
+      "alarSepEnNm": "Based on commitment coverage",
+      "alarSepDesc": "약정 커버리지 #{OPT_VAL}% 미만 시 알림",
+      "alarSepEmDesc": "Notification when commitment coverage is less than #{OPT_VAL}%",
+      "optUnitVal": "%",
+      "optUnitEmVal": "%"
+    },
+    {
+      "num": 1,
+      "alarSepCd": "UTL_STD",
+      "alarSepNm": "약정 사용률 기준",
+      "alarSepEnNm": "Based on commitment usage rate",
+      "alarSepDesc": "약정 사용률 #{OPT_VAL}% 미만 시 알림",
+      "alarSepEmDesc": "Notification when commitment usage rate is less than #{OPT_VAL}%",
+      "optUnitVal": "%",
+      "optUnitEmVal": "%"
+    },
+    {
+      "num": 2,
+      "alarSepCd": "SAVE_STD",
+      "alarSepNm": "약정 사용률 기준",
+      "alarSepEnNm": "Based on commitment usage rate",
+      "alarSepDesc": "절감액 0원 미만 시 알림",
+      "alarSepEmDesc": "Notification when savings are less than 0 won",
+      "optUnitVal": "",
+      "optUnitEmVal": ""
+    },
+    {
+      "num": 3,
+      "alarSepCd": "CMMT_RCMD",
+      "alarSepNm": "약정 추천",
+      "alarSepEnNm": "Commitment Recommendation",
+      "alarSepDesc": "약정 커버리지 #{OPT_VAL}% 미만 시 약정 추천 알림",
+      "alarSepEmDesc": "Recommendation notification when commitment coverage is less than #{OPT_VAL}%",
+      "optUnitVal": "%",
+      "optUnitEmVal": "%"
+    },
+    {
+      "num": 4,
+      "alarSepCd": "CMMT_EXPR",
+      "alarSepNm": "약정 만료",
+      "alarSepEnNm": "Commitment expires",
+      "alarSepDesc": "약정 만료 #{OPT_VAL}일 전 일자에 알림",
+      "alarSepEmDesc": "Notification #{OPT_VAL} days before contract expiration",
+      "optUnitVal": "일",
+      "optUnitEmVal": "days"
+    },
+    {
+      "num": 5,
+      "alarSepCd": "UNUSED_ALAR",
+      "alarSepNm": "미사용자원",
+      "alarSepEnNm": "Unused resources",
+      "alarSepDesc": "미사용자원 감지 시 알림",
+      "alarSepEmDesc": "Notification when unused resources are detected",
+      "optUnitVal": "",
+      "optUnitEmVal": ""
+    },
+    {
+      "num": 6,
+      "alarSepCd": "RIGHTSIZING_ALAR",
+      "alarSepNm": "Rightsizing",
+      "alarSepEnNm": "Rightsizing",
+      "alarSepDesc": "Rightsizing 대상 감지 시 알림",
+      "alarSepEmDesc": "Notification when rightsizing target is detected",
+      "optUnitVal": "",
+      "optUnitEmVal": ""
+    },
+    {
+      "num": 7,
+      "alarSepCd": "ANOMALY_ALAR",
+      "alarSepNm": "이상비용탐지",
+      "alarSepEnNm": "Abnormal cost detection",
+      "alarSepDesc": "이상비용 감지 시 알림",
+      "alarSepEmDesc": "Notification when abnormal cost are detected",
+      "optUnitVal": "",
+      "optUnitEmVal": ""
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "mode": "history",
+  "routes": [
+    {
+      "name": "리소스 관리",
+      "children": [
+        {
+          "path": "http://www.naver.com",
+          "name": "Asset Management",
+          "icon": "ci-icon-asset",
+          "badge": "new"
+        },
+        {
+          "path": "http://www.naver.com",
+          "name": "Cost Management",
+          "icon": "ci-icon-cost",
+          "badge": "beta"
+        },
+        {
+          "path": "http://www.naver.com",
+          "name": "Governance",
+          "icon": "ci-icon-governance"
+        }
+      ]
+    },
+    {
+      "name": "모니터링",
+      "children":[
+        {
+          "path": "http://www.naver.com",
+          "name": "AlertNow",
+          "icon": "ci-icon-alertNow"
+        },
+        {
+          "path": "http://www.naver.com",
+          "name": "Monitoring Dashboard",
+          "icon": "ci-icon-monitoring"
+        }
+      ]
+    },
+    {
+      "name": "생산성",
+      "children":[
+        {
+          "path": "http://www.naver.com",
+          "icon": "ci-icon-chatBot",
+          "name": "A.I ChatBot"
+        },
+        {
+          "path": "http://www.naver.com",
+          "icon": "ci-icon-devOs",
+          "name": "DevOS"
+        }
+      ]
+    }
+  ]
+}

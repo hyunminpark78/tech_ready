@@ -1,0 +1,6 @@
+<svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity=".6">
+        <rect x="1" y="1" width="29" height="27" rx="4" fill="#FF5454" stroke="#EA2E2E"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="m6.689 14.741 4.552-3v6l-4.552-3zM24.241 14.741l-4.552 3v-6l4.552 3z" fill="#fff"/>
+    </g>
+</svg>

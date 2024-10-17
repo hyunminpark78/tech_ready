@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259" height="231" viewBox="0 0 259 231">
+    <defs>
+        <rect id="mcsk3fsgea" width="11.83" height="11.83" x="0" y="0" rx="1.577"/>
+        <rect id="lsp9znjm5c" width="11.83" height="11.83" x="0" y="0" rx="1.577"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(4.000000, 216.000000)">
+                        <text fill="#666" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="11.041" font-weight="400" letter-spacing="-.018">
+                            <tspan x="19.716" y="10">민감도</tspan>
+                        </text>
+                        <rect width="11.83" height="11.83" y=".789" fill="#14A9E5" opacity=".15" rx="1.577"/>
+                    </g>
+                    <g>
+                        <g transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(4.000000, 216.000000) translate(60.725552, 0.000000) translate(0.000000, 0.788644)">
+                            <mask id="v6aw9h392b" fill="#fff">
+                                <use xlink:href="#mcsk3fsgea"/>
+                            </mask>
+                            <rect width="11.041" height="11.041" x=".394" y=".394" stroke="#BCD7E1" stroke-width=".789" rx="1.577"/>
+                            <path stroke="#14A9E5" stroke-width="2.366" d="M0 5.917L11.83 5.917" mask="url(#v6aw9h392b)"/>
+                        </g>
+                        <text fill="#666" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="11.041" font-weight="400" letter-spacing="-.018" transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(4.000000, 216.000000) translate(60.725552, 0.000000)">
+                            <tspan x="16.562" y="10">실제비용</tspan>
+                        </text>
+                    </g>
+                    <g transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(4.000000, 216.000000) translate(129.551618, 0.000000)">
+                        <text fill="#666" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="11.041" font-weight="400" letter-spacing="-.018">
+                            <tspan x="13.982" y="10">이상비용</tspan>
+                        </text>
+                        <circle cx="3.521" cy="6.309" r="3.155" fill="#FF8AD3"/>
+                    </g>
+                    <g>
+                        <text fill="#666" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="11.041" font-weight="400" letter-spacing="-.018" transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(4.000000, 216.000000) translate(194.794953, 0.000000)">
+                            <tspan x="16.562" y="10">예측비용</tspan>
+                        </text>
+                        <g transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(4.000000, 216.000000) translate(194.794953, 0.000000)">
+                            <mask id="b71ncmg4ud" fill="#fff">
+                                <use xlink:href="#lsp9znjm5c"/>
+                            </mask>
+                            <rect width="11.041" height="11.041" x=".394" y=".394" stroke="#BCD7E1" stroke-width=".789" rx="1.577"/>
+                            <path stroke="#14A9E5" stroke-dasharray="1.577" stroke-linecap="round" stroke-width=".789" d="M0 5.917L11.83 5.917" mask="url(#b71ncmg4ud)"/>
+                        </g>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(0.000000, 27.000000)">
+                        <path fill="#14A9E5" d="M259 58L258 97 0 97 0 58z" opacity=".151"/>
+                        <path stroke="#14A9E5" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M270.806 64L217.356 90.32 131.5 14 48.357 112 -13.076 87.577"/>
+                        <circle cx="217.714" cy="89.714" r="5.714" fill="#00A5ED"/>
+                        <path stroke="#14A9E5" stroke-dasharray="6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0 78.5L258 78.5"/>
+                    </g>
+                    <g fill="#FF8AD3" transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(0.000000, 27.000000) translate(122.000000, 4.000000)">
+                        <circle cx="10" cy="10" r="10" opacity=".497"/>
+                        <circle cx="10" cy="10" r="5.714"/>
+                    </g>
+                    <g fill="#FF8AD3" transform="translate(-990.000000, -294.000000) translate(990.000000, 294.000000) translate(0.000000, 27.000000) translate(42.000000, 106.000000)">
+                        <circle cx="6" cy="6" r="5.714"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

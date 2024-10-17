@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+    <defs>
+        <filter id="fxmglgnfca" color-interpolation-filters="auto">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.358512 0 0 0 0 0.660878 0 0 0 0 0.792820 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g filter="url(#fxmglgnfca)" transform="translate(-1794.000000, -287.000000) translate(1638.000000, 56.000000) translate(0.000000, 216.000000) translate(156.000000, 14.000000)">
+                        <g>
+                            <g stroke="#000" stroke-width=".713">
+                                <path stroke-linecap="round" d="M9.563 8.77v3.043c0 .414-.336.75-.75.75h-3.47m0-11.438h3.47c.414 0 .75.336.75.75v2.596" transform="translate(0.000000, 1.000000) translate(2.625000, 0.750000)"/>
+                                <path d="M.575 1.147L4.418.222c.403-.096.808.152.905.554.014.058.02.117.02.176v11.774c0 .414-.335.75-.75.75-.06 0-.122-.007-.182-.022L.568 12.49C.234 12.406 0 12.106 0 11.762V1.876c0-.347.238-.648.575-.73z" transform="translate(0.000000, 1.000000) translate(2.625000, 0.750000)"/>
+                                <g stroke-linecap="round">
+                                    <path d="M1.073 3.75L1.133 0M0 1.29L1.133 0M2.261 1.317L1.133 0" transform="translate(0.000000, 1.000000) translate(2.625000, 0.750000) translate(9.468462, 6.895693) rotate(-270.000000) translate(-9.468462, -6.895693) translate(7.968462, 4.895693)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

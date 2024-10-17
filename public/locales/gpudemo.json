@@ -1,0 +1,856 @@
+{
+  "irruptionPrice": [
+    {
+      "region": "Asia Pacific (Tokyo)",
+      "regionName": "ap-northeast-1",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 4,
+      "onDemandBill": 1211,
+      "spotPrice": [
+        550
+      ],
+      "savingRate": [
+        54.61
+      ],
+      "availabilityZones": [
+        "ap-northeast-1d"
+      ],
+      "latitude": 35.6785,
+      "longitude": 139.6823
+    },
+    {
+      "region": "Asia Pacific (Osaka-Local)",
+      "regionName": "ap-northeast-3",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 1211,
+      "spotPrice": [
+        544
+      ],
+      "savingRate": [
+        55.04
+      ],
+      "availabilityZones": [
+        "ap-northeast-3b"
+      ],
+      "latitude": 34.606869,
+      "longitude": 135.492076
+    },
+    {
+      "region": "Asia Pacific (Mumbai)",
+      "regionName": "ap-south-1",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 2,
+      "onDemandBill": 1034,
+      "spotPrice": [
+        425,
+        413
+      ],
+      "savingRate": [
+        58.89,
+        60.04
+      ],
+      "availabilityZones": [
+        "ap-south-1a",
+        "ap-south-1b"
+      ],
+      "latitude": 19.075029,
+      "longitude": 72.879484
+    },
+    {
+      "region": "Asia Pacific (Singapore)",
+      "regionName": "ap-southeast-1",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 1,
+      "onDemandBill": 1247,
+      "spotPrice": [
+        358
+      ],
+      "savingRate": [
+        71.23
+      ],
+      "availabilityZones": [
+        "ap-southeast-1c"
+      ],
+      "latitude": 1.345573,
+      "longitude": 103.867587
+    },
+    {
+      "region": "Asia Pacific (Sydney)",
+      "regionName": "ap-southeast-2",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 1,
+      "onDemandBill": 1176,
+      "spotPrice": [
+        562,
+        530,
+        542
+      ],
+      "savingRate": [
+        52.22,
+        54.9,
+        53.92
+      ],
+      "availabilityZones": [
+        "ap-southeast-2a",
+        "ap-southeast-2b",
+        "ap-southeast-2c"
+      ],
+      "latitude": -33.867139,
+      "longitude": 151.22705
+    },
+    {
+      "region": "Canada (Central)",
+      "regionName": "ca-central-1",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 1041,
+      "spotPrice": [
+        496
+      ],
+      "savingRate": [
+        52.32
+      ],
+      "availabilityZones": [
+        "ca-central-1a"
+      ],
+      "latitude": 49.28755,
+      "longitude": -123.136246
+    },
+    {
+      "region": "Europe (Stockholm)",
+      "regionName": "eu-north-1",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 1,
+      "onDemandBill": 1005,
+      "spotPrice": [
+        325,
+        325,
+        325
+      ],
+      "savingRate": [
+        67.68,
+        67.68,
+        67.68
+      ],
+      "availabilityZones": [
+        "eu-north-1a",
+        "eu-north-1b",
+        "eu-north-1c"
+      ],
+      "latitude": 59.510392,
+      "longitude": 18.115352
+    },
+    {
+      "region": "US East (N. Virginia)",
+      "regionName": "us-east-1",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 962,
+      "spotPrice": [
+        471,
+        466,
+        462
+      ],
+      "savingRate": [
+        51.06,
+        51.56,
+        51.99
+      ],
+      "availabilityZones": [
+        "us-east-1a",
+        "us-east-1b",
+        "us-east-1c"
+      ],
+      "latitude": 37.3,
+      "longitude": -79
+    },
+    {
+      "region": "US West (Oregon)",
+      "regionName": "us-west-2",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 962,
+      "spotPrice": [
+        320,
+        320,
+        320
+      ],
+      "savingRate": [
+        66.68,
+        66.68,
+        66.68
+      ],
+      "availabilityZones": [
+        "us-west-2a",
+        "us-west-2b",
+        "us-west-2c"
+      ],
+      "latitude": 44.420928,
+      "longitude": -120.848013
+    },
+    {
+      "region": "Asia Pacific (Seoul)",
+      "regionName": "ap-northeast-2",
+      "instanceType": "g4dn.xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 962,
+      "spotPrice": [
+        242,
+        269
+      ],
+      "savingRate": [
+        74.84,
+        72.50
+      ],
+      "availabilityZones": [
+        "ap-northeast-2b",
+        "ap-northeast-2c"
+      ],
+      "latitude": 37.579378,
+      "longitude": 127.006875
+    }
+  ],
+  "irruptionPriceG5": [
+    {
+      "region": "Asia Pacific (Tokyo)",
+      "regionName": "ap-northeast-1",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 1,
+      "onDemandBill": 2881,
+      "spotPrice": [
+        1293,
+        1255
+      ],
+      "savingRate": [
+        55.1,
+        56.44
+      ],
+      "availabilityZones": [
+        "ap-northeast-1a",
+        "ap-northeast-1c"
+      ],
+      "latitude": 35.6785,
+      "longitude": 139.6823
+    },
+    {
+      "region": "Asia Pacific (Seoul)",
+      "regionName": "ap-northeast-2",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 2519,
+      "spotPrice": [
+        916
+      ],
+      "savingRate": [
+        63.63
+      ],
+      "availabilityZones": [
+        "ap-northeast-2a"
+      ],
+      "latitude": 37.579378,
+      "longitude": 127.006875
+    },
+    {
+      "region": "Asia Pacific (Mumbai)",
+      "regionName": "ap-south-1",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 2471,
+      "spotPrice": [
+        946
+      ],
+      "savingRate": [
+        61.71
+      ],
+      "availabilityZones": [
+        "ap-south-1a"
+      ],
+      "latitude": 19.075029,
+      "longitude": 72.879484
+    },
+    {
+      "region": "Europe (Stockholm)",
+      "regionName": "ap-southeast-2",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 1,
+      "onDemandBill": 2634,
+      "spotPrice": [
+        1301,
+        1201
+      ],
+      "savingRate": [
+        50.61,
+        54.38
+      ],
+      "availabilityZones": [
+        "ap-southeast-2a",
+        "ap-southeast-2c"
+      ],
+      "latitude": -33.867139,
+      "longitude": 151.22705
+    },
+    {
+      "region": "Europe (Stockholm)",
+      "regionName": "eu-north-1",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 2241,
+      "spotPrice": [
+        673,
+        673
+      ],
+      "savingRate": [
+        69.97,
+        69.97
+      ],
+      "availabilityZones": [
+        "eu-north-1b",
+        "eu-north-1c"
+      ],
+      "latitude": 59.510392,
+      "longitude": 18.115352
+    },
+    {
+      "region":	"Europe (Ireland)",
+      "regionName": "eu-west-1",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 4,
+      "onDemandBill": 2332,
+      "spotPrice": [
+        1295,
+        1298
+      ],
+      "savingRate": [
+        44.48,
+        44.36
+      ],
+      "availabilityZones": [
+        "eu-west-1a",
+        "eu-west-1c"
+      ],
+      "latitude": 53.328679,
+      "longitude": -8.011856
+    },
+    {
+      "regionName": "eu-west-2",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 2,
+      "onDemandBill": 2584,
+      "spotPrice": [
+        1291,
+        1254
+      ],
+      "savingRate": [
+        50.03,
+        51.46
+      ],
+      "availabilityZones": [
+        "eu-west-2a",
+        "eu-west-2b"
+      ],
+      "latitude": 51.5002,
+      "longitude": -0.1262
+    },
+    {
+      "regionName": "sa-east-1",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 3291,
+      "spotPrice": [
+        1135
+      ],
+      "savingRate": [
+        65.49
+      ],
+      "availabilityZones": [
+        "sa-east-1b"
+      ],
+      "latitude": -23.534488,
+      "longitude": -46.66492
+    },
+    {
+      "region":"US East (N. Virginia)",
+      "regionName": "us-east-1",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 1,
+      "onDemandBill": 2141,
+      "spotPrice": [
+        1026,
+        1005,
+        996,
+        1000,
+        1007
+      ],
+      "savingRate": [
+        52.06,
+        53.05,
+        53.46,
+        53.3,
+        52.95
+      ],
+      "availabilityZones": [
+        "us-east-1a",
+        "us-east-1b",
+        "us-east-1c",
+        "us-east-1d",
+        "us-east-1f"
+      ],
+      "latitude": 37.3,
+      "longitude": -79
+    },
+    {
+      "region": "US West (Oregon)",
+      "regionName": "us-west-2",
+      "instanceType": "g5.2xlarge",
+      "irruptionRate": 0,
+      "onDemandBill": 2141,
+      "spotPrice": [
+        663,
+        663,
+        663
+      ],
+      "savingRate": [
+        69.04,
+        69.04,
+        69.04
+      ],
+      "availabilityZones": [
+        "us-west-2a",
+        "us-west-2b",
+        "us-west-2c"
+      ],
+      "latitude": 44.420928,
+      "longitude": -120.848013
+    }
+  ],
+  "locationScore": [
+    {
+      "region": "Asia Pacific (Tokyo)",
+      "regionName": "ap-northeast-1",
+      "availableZone": "ap-northeast-1a",
+      "rate": 8,
+      "score": 9,
+      "longitude": 35.6785,
+      "latitude": 139.6823
+    },
+    {
+      "regionName": "us-east-2",
+      "availableZone": "us-east-2a",
+      "rate": 8,
+      "score": 6,
+      "longitude": 40.273751,
+      "latitude": -83.337088
+    },
+    {
+      "regionName": "ap-northeast-2",
+      "availableZone": "ap-northeast-2a",
+      "rate": 4,
+      "score": 4,
+      "longitude": 37.579378,
+      "latitude": 127.006875
+    },
+    {
+      "regionName": "us-west-1",
+      "availableZone": "us-west-1c",
+      "rate": 2,
+      "score": 1,
+      "longitude": 37.464688,
+      "latitude": -120.169814
+    },
+    {
+      "regionName": "ap-northeast-1",
+      "availableZone": "ap-northeast-1b",
+      "rate": 2,
+      "score": 2,
+      "longitude": 35.6785,
+      "latitude": 139.6823
+    },
+    {
+      "regionName": "ap-southeast-2",
+      "availableZone": "ap-southeast-2b",
+      "rate": 5,
+      "score": 9,
+      "longitude": -33.867139,
+      "latitude": 151.22705
+    },
+    {
+      "regionName": "eu-central-1",
+      "availableZone": "eu-central-1c",
+      "rate": 10,
+      "score": 4,
+      "longitude": 8.684307,
+      "latitude": 50.112258
+    },
+    {
+      "regionName": "eu-central-1",
+      "availableZone": "eu-central-1a",
+      "rate": 1,
+      "score": 7,
+      "longitude": 8.684307,
+      "latitude": 50.112258
+    },
+    {
+      "regionName": "ap-southeast-2",
+      "availableZone": "ap-southeast-2b",
+      "rate": 10,
+      "score": 6,
+      "longitude": -33.867139,
+      "latitude": 151.22705
+    },
+    {
+      "regionName": "ap-northeast-2",
+      "availableZone": "ap-northeast-2a",
+      "rate": 9,
+      "score": 8,
+      "longitude": 37.579378,
+      "latitude": 127.006875
+    }
+  ],
+  "regionData": [
+    {
+      "id": "CTRT0000002166",
+      "nm": "Asia Pacific (All)",
+      "childKey": [
+        {
+          "id": "385363702294",
+          "nm": "Asia Pacific (Hong Kong)",
+          "lowerNm": "Asia Pacific (Hong Kong)",
+          "ctrtId": "CTRT0000002166"
+        },
+        {
+          "id": "3853637022941",
+          "nm": "Asia Pacific (Tokyo)",
+          "lowerNm": "Asia Pacific (Tokyo)",
+          "ctrtId": "CTRT0000002166"
+        },
+        {
+          "id": "3853637022942",
+          "nm": "Asia Pacific (Tokyo)",
+          "lowerNm": "Asia Pacific (Tokyo)",
+          "ctrtId": "CTRT0000002166"
+        },
+        {
+          "id": "3853637022943",
+          "nm": "Asia Pacific (Seoul)",
+          "lowerNm": "Asia Pacific (Seoul)",
+          "ctrtId": "CTRT0000002166"
+        },
+        {
+          "id": "3853637022944",
+          "nm": "Asia Pacific (Osaka-Local)",
+          "lowerNm": "Asia Pacific (Osaka-Local)",
+          "ctrtId": "CTRT0000002166"
+        },
+        {
+          "id": "3853637022945",
+          "nm": "Asia Pacific (Sydney)",
+          "lowerNm": "Asia Pacific (Sydney)",
+          "ctrtId": "CTRT0000002166"
+        }
+      ]
+    },
+    {
+      "id": "CTRT00000021662",
+      "nm": "Europe (All)",
+      "childKey": [
+        {
+          "id": "3853637022943",
+          "nm": "Europe (Frankfurt)",
+          "lowerNm": "Europe (Frankfurt)",
+          "ctrtId": "CTRT00000021662"
+        },
+        {
+          "id": "38536370229414",
+          "nm": "Europe (Zurich)",
+          "lowerNm": "Europe (Zurich)",
+          "ctrtId": "CTRT00000021662"
+        },
+        {
+          "id": "38536370229425",
+          "nm": "Europe (Milan)",
+          "lowerNm": "Europe (Milan)",
+          "ctrtId": "CTRT00000021662"
+        },
+        {
+          "id": "38536370229426",
+          "nm": "Europe (Spain)",
+          "lowerNm": "Europe (Spain)",
+          "ctrtId": "CTRT00000021662"
+        },
+        {
+          "id": "38536370229427",
+          "nm": "Europe (Ireland)",
+          "lowerNm": "Europe (Ireland)",
+          "ctrtId": "CTRT00000021662"
+        },
+        {
+          "id": "38536370229428",
+          "nm": "Europe (London)",
+          "lowerNm": "Europe (London)",
+          "ctrtId": "CTRT00000021662"
+        },
+        {
+          "id": "38536370229429",
+          "nm": "Europe (Paris)",
+          "lowerNm": "Europe (Paris)",
+          "ctrtId": "CTRT00000021662"
+        }
+      ]
+    },
+    {
+      "id": "CTRT00000021697",
+      "nm": "US (All)",
+      "childKey": [
+        {
+          "id": "3853637022946",
+          "nm": "US (Ohio)",
+          "lowerNm": "US (Ohio)",
+          "ctrtId": "CTRT00000021663"
+        },
+        {
+          "id": "38536370229417",
+          "nm": "US (N. Virginia)",
+          "lowerNm": "US (N. Virginia)",
+          "ctrtId": "CTRT00000021663"
+        },
+        {
+          "id": "38536370229428",
+          "nm": "US (N. California)",
+          "lowerNm": "US (N. California)",
+          "ctrtId": "CTRT00000021663"
+        }
+      ]
+    },
+    {
+      "id": "CTRT00000021663",
+      "nm": "Africa (Cape Town)",
+      "childKey": [
+      ]
+    }
+  ],
+  "filterTableData": [
+    {
+      "instanceType": "p3.2xlarge",
+      "GPU": 1,
+      "GPUmemory": 8,
+      "vCPU": 8,
+      "memory": 8,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "A100"
+      ]
+    },
+    {
+      "instanceType": "p3.8xlarge",
+      "GPU": 4,
+      "GPUmemory": 32,
+      "vCPU": 32,
+      "memory": 32,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "A100"
+      ]
+    },
+    {
+      "instanceType": "p3.16xlarge",
+      "GPU": 8,
+      "GPUmemory": 64,
+      "vCPU": 64,
+      "memory": 64,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "A100"
+      ]
+    },
+    {
+      "instanceType": "p3.24xlarge",
+      "GPU": 8,
+      "GPUmemory": 96,
+      "vCPU": 96,
+      "memory": 96,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "A100"
+      ]
+    },
+    {
+      "instanceType": "g4dn.xlarge",
+      "GPU": 1,
+      "GPUmemory": 16,
+      "vCPU": 4,
+      "memory": 16,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "NVIDIA T4 Tensor"
+      ]
+    },
+    {
+      "instanceType": "g4dn.2xlarge",
+      "GPU": 1,
+      "GPUmemory": 16,
+      "vCPU": 8,
+      "memory": 32,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "NVIDIA T4 Tensor"
+      ]
+    },
+    {
+      "instanceType": "g4dn.8xlarge",
+      "GPU": 1,
+      "GPUmemory": 16,
+      "vCPU": 16,
+      "memory": 64,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "NVIDIA T4 Tensor"
+      ]
+    },
+    {
+      "instanceType": "g4dn.12xlarge",
+      "GPU": 1,
+      "GPUmemory": 16,
+      "vCPU": 32,
+      "memory": 128,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "NVIDIA T4 Tensor"
+      ]
+    },
+    {
+      "instanceType": "g4dn.16xlarge",
+      "GPU": 1,
+      "GPUmemory": 16,
+      "vCPU": 64,
+      "memory": 256,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "NVIDIA T4 Tensor"
+      ]
+    },
+    {
+      "instanceType": "g5.xlarge",
+      "GPU": 1,
+      "GPUmemory": 24,
+      "vCPU": 4,
+      "memory": 16,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "AMD EPYC 7R32"
+      ]
+    },
+    {
+      "instanceType": "g5.2large",
+      "GPU": 1,
+      "GPUmemory": 24,
+      "vCPU": 8,
+      "memory": 32,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "AMD EPYC 7R32"
+      ]
+    },
+    {
+      "instanceType": "g5.4xlarge",
+      "GPU": 1,
+      "GPUmemory": 24,
+      "vCPU": 16,
+      "memory": 64,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "AMD EPYC 7R32"
+      ]
+    },
+    {
+      "instanceType": "g5.8xlarge",
+      "GPU": 1,
+      "GPUmemory": 24,
+      "vCPU": 32,
+      "memory": 128,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "AMD EPYC 7R32"
+      ]
+    },
+    {
+      "instanceType": "g5.16xlarge",
+      "GPU": 1,
+      "GPUmemory": 24,
+      "vCPU": 64,
+      "memory": 256,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "AMD EPYC 7R32"
+      ]
+    },
+    {
+      "instanceType": "g5.12xlarge",
+      "GPU": 4,
+      "GPUmemory": 96,
+      "vCPU": 48,
+      "memory": 192,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "AMD EPYC 7R32"
+      ]
+    },
+    {
+      "instanceType": "g5.24xlarge",
+      "GPU": 4,
+      "GPUmemory": 96,
+      "vCPU": 96,
+      "memory": 384,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "AMD EPYC 7R32"
+      ]
+    },
+    {
+      "instanceType": "g5.48xlarge",
+      "GPU": 8,
+      "GPUmemory": 192,
+      "vCPU": 92,
+      "memory": 768,
+      "architecture": [
+        "x86_68"
+      ],
+      "acceleratorType": [
+        "AMD EPYC 7R32"
+      ]
+    }
+  ]
+}
+

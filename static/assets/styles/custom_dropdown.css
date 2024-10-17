@@ -1,0 +1,38 @@
+
+.g-fade-enter-active, .g-fade-leave-active {
+  transition: opacity .3s;
+}
+.g-fade-enter, .g-fade-leave-to {
+  opacity: 0;
+}
+
+.dropDown-wrap > .-btn {justify-content: flex-start;text-align: left;}
+
+.dropDown-wrap .dropDown-list {display:none; position:absolute; left:0; top:110%;}
+.dropDown-wrap .dropDown-list.up {top:-130px;}
+
+.dropDown-wrap > .-btn {height:24px;}
+
+.dropDown-list {border-radius:4px !important; overflow:hidden;}
+.dropDown-list .-btn {height:40px !important; border-radius:0 !important; justify-content:start;}
+
+.dropDown-wrap .dropDown-list.down- {top:100%; bottom: auto; left: 0; right: auto;}
+.dropDown-wrap .dropDown-list.down-left- {top:100%; bottom: auto; left: 0; right: auto;}
+.dropDown-wrap .dropDown-list.down-right- {top:100%; bottom: auto; left: auto; right: 0px; }
+
+.dropDown-wrap .dropDown-list.up- {bottom: 100%; top: auto; left: 0px; right: auto;}
+.dropDown-wrap .dropDown-list.up-left- {bottom: 100%; top: auto; left: 0px; right: auto;}
+.dropDown-wrap .dropDown-list.up-right- {bottom: 100%; top: auto; left: auto; right: 0px;}
+
+.dropDown-wrap .dropDown-list.right- {top: 0; bottom: auto; left: calc(100% - 8px); right: auto;}
+.dropDown-wrap .dropDown-list.right-down- {top: 0; bottom: auto; left: calc(100% - 8px); right: auto;}
+.dropDown-wrap .dropDown-list.right-up- {top: auto; bottom: 0; left: calc(100% - 8px); right: auto;}
+
+.dropDown-wrap .dropDown-list.left- {top: 0; bottom: auto; left: auto; right: 100%;}
+.dropDown-wrap .dropDown-list.left-down- {top: 0; bottom: auto; left: auto; right: 100%;}
+.dropDown-wrap .dropDown-list.left-up- {top: auto; bottom: 0; left: auto; right: 100%;}
+
+.dropDown-wrap .dropDown-list .-dropdown-text {justify-content: flex-start; text-align: left;}
+.dropDown-wrap .dropDown-list button {white-space:nowrap;}
+.dropDown-wrap .dropDown-list button.selected- {background-color: #e0e0e0 !important;}
+

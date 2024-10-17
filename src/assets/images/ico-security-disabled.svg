@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31">
+    <g fill="none" fill-rule="evenodd" opacity=".7">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path stroke="#999" stroke-linejoin="round" stroke-width="1.425" d="M10.214 0L0 4.544c.583 6.441 1.441 10.742 2.574 12.904 1.135 2.166 3.682 4.35 7.64 6.552 4.027-2.414 6.614-4.598 7.76-6.552 1.268-2.16 2.151-6.46 2.651-12.904L10.214 0z" transform="translate(-1362.000000, -925.000000) translate(360.000000, 908.000000) translate(1002.000000, 17.000000) translate(4.500000, 3.000000)"/>
+                        <g transform="translate(-1362.000000, -925.000000) translate(360.000000, 908.000000) translate(1002.000000, 17.000000) translate(4.500000, 3.000000) translate(5.625000, 4.125000)">
+                            <path stroke="#999" stroke-width="1.425" d="M.375 4.552H9c.207 0 .375.168.375.375v6.698c0 .207-.168.375-.375.375H.375C.168 12 0 11.832 0 11.625V4.927c0-.207.168-.375.375-.375z"/>
+                            <ellipse cx="4.783" cy="7.357" fill="#999" rx="1.278" ry="1.241"/>
+                            <path stroke="#999" stroke-width="1.425" d="M2.13 4.574V2.483C2.13 1.112 3.276 0 4.689 0 6.1 0 7.244 1.112 7.244 2.483v2.055"/>
+                            <path stroke="#999" stroke-linecap="round" stroke-width="1.425" d="M4.783 7.771L4.783 9.518"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

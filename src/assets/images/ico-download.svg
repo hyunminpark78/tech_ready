@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+    <defs>
+        <filter id="dduncjxvna">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.600000 0 0 0 0 0.600000 0 0 0 0 0.600000 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g>
+            <g>
+                <g>
+                    <g filter="url(#dduncjxvna)" transform="translate(-1355.000000, -1242.000000) translate(-2.000000, 0.000000) translate(361.000000, 1203.000000) translate(856.000000, 38.000000)">
+                        <g>
+                            <g stroke="#000">
+                                <path d="M5.02 10.563L5.087 2.112M.211.211L9.929.211M2.535 5.019L5.087 2.112M7.631 5.08L5.087 2.112" transform="translate(140.000000, 1.000000) translate(6.102500, 6.362500) rotate(-180.000000) translate(-6.102500, -6.362500) translate(0.602500, 0.862500)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

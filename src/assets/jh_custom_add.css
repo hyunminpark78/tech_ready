@@ -1,0 +1,20 @@
+.down.flex.show-arrow.mx-3 .mr-3 { display:none !important; }
+.down.flex.show-arrow.mx-3 .contents-line { display:none !important; }
+.down.flex.show-arrow.mx-3 .mt-5.ml-6 { margin:0px !important; } 
+.select_wrap.mr-3 { width:64px !important;height:31px !important;line-height:30px !important }
+.down.flex.show-arrow.mx-3 .mt-5.ml-6 img { max-width:28px;margin-left:4px; }
+.select_wrap.mr-3  .sel > .down { padding:0px !important;padding-right:20px;margin:0px !important }
+.gpu-tab { font-size:14px !important; }
+.gpu-tab { width:200px !important; }
+.geo-map.relative { border:1px solid #00A5ED;margin-top:-1px !important; }
+.title-panel { color:#5BA9CA !important;font-size:14px !important; }
+.spot-gpu-panel-container .spot-gpu-panel { overflow:hidden !important;border:1px solid #c1e8fb !important;border-collapse:collapse;box-shadow:4px 4px 10px rgba(0,0,0,0.2) }
+.spot-gpu-panel-container .spot-gpu-panel td { border:1px solid #c1e8fb !important;background:white !important;color:black !important;border-left:none !important;border-right:none !important }
+.spot-gpu-header { background:#F1F9FF !important }
+.spot-gpu-header p { color:#5BA9CA !important;font-size:13px !important;font-weight:Bold !important; }  
+.upclose { width:39px;height:39px;cursor:pointer;position:Relative;background:url('./upclose.png') no-repeat;margin-bottom:-24px; }
+.filter__container { margin-top:-20px;left:0px !important;margin-left:-28px;border-radius:0px !important;border-radius:0px 0px 10px 10px !important;box-shadow: 4px 4px 10px rgba(0,0,0,0.2);  } 
+.tooltip-spot { background:white !important;color:black !important;border:0px solid white !important;position:relative;border-radius:10px; }
+.tooltip_content { color:black !important }
+.tooltip-spot h4 { color:black !important; }
+.tooltip_content p { color: #00A5ED !important; }

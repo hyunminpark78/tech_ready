@@ -1,0 +1,33 @@
+.amchart-custom-tooltip {
+  max-width: 380px; }
+  .amchart-custom-tooltip .flex-ui {
+    display: flex;
+    flex-direction: row; }
+    .amchart-custom-tooltip .flex-ui.center {
+      align-items: center; }
+
+.chart-lr-grid {
+  display: flex; }
+  .chart-lr-grid > *:first-child {
+    margin-right: auto; }
+  .chart-lr-grid.center {
+    align-items: center; }
+  .chart-lr-grid > p:first-child {
+    width: 70%;
+    padding-left: 10px; }
+    .chart-lr-grid > p:first-child .legend-mark {
+      display: inline-block;
+      width: 8px;
+      height: 8px; }
+    .chart-lr-grid > p:first-child .legend-text {
+      display: block;
+      width: 90%;
+      word-break: break-all;
+      white-space: normal; }
+  .chart-lr-grid p:last-child {
+    display: flex;
+    align-items: center; }
+
+.total {
+  border-top-width: 1px;
+  border-style: solid; }
