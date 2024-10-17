@@ -1,39 +1,32 @@
 <template>
   <div>
-    <div class="spot-tab-filter-container">
+    <div class="spot-tab-filter-container" style="margin-top: 13px">
       <div class="left" style="padding-top: 12px; box-sizing: border-box">
         <div class="required">
           <div class="flex-container column" style="display: flex; flex-direction: column">
-            <div
-              class="label-container"
-              style="display: flex; flex-direction: row; align-items: center; color: #333333; font-size: 14px"
-            >
-              <p class="table__search-title">인스턴스 수</p>
+            <div class="label-container" style="display: flex; flex-direction: row; align-items: center">
+              <p class="table__search-title">인스턴스 유형</p>
               <img src="@/assets/images/required-01.svg" alt="required" />
-              <input type="number" /> &nbsp; 개
             </div>
           </div>
         </div>
       </div>
-      <div class="right" style="padding-top: 12px; box-sizing: border-box">
+      <div class="right">
         <div class="required" style="display: flex; flex-direction: column; align-items: flex-start">
           <div class="input-wrapper" style="width: 100%">
-            <p class="table__search-title" style="margin-right: 10px">인스턴스 유형</p>
-            <div class="input-wrapper" style="width: 100%">
-              <div class="input" style="width: 100%">
-                <img src="@/assets/images/search-01.svg" alt="search-icon" style="position: absolute; left: 10px" />
-                <input
-                  v-model="instanceType"
-                  type="text"
-                  style="
-                    font-size: 1rem;
-                    color: #333;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    padding: 0.25rem 0.25rem 0.25rem 2rem;
-                  "
-                />
-              </div>
+            <div class="input" style="width: 100%">
+              <img src="@/assets/images/search-01.svg" alt="search-icon" style="position: absolute; left: 10px" />
+              <input
+                v-model="instanceType"
+                type="text"
+                style="
+                  font-size: 1rem;
+                  color: #333;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  padding: 0.25rem 0.25rem 0.25rem 2rem;
+                "
+              />
             </div>
           </div>
         </div>
@@ -78,14 +71,6 @@
       <!--        :total-cnt="pageObj.totalCnt"-->
       <!--        @changepage="pageChange"-->
       <!--      />-->
-    </div>
-    <div class="checked_tag">fdsfdsfdsfd</div>
-    <div class="checked_tag">fdsfdsfdsfd</div>
-    <div class="checked_tag">fdsfdsfdsfd</div>
-    <div class="checked_tag">fdsfdsfdsfd</div>
-    <div class="warning">
-      <img src="@/assets/images/required-01.svg" alt="다음 페이지" />
-      <p style="font-size: 11px">가격 및 절감률 조회 시 인스턴스 타입은 한 가지만 조회 가능합니다.</p>
     </div>
   </div>
 </template>

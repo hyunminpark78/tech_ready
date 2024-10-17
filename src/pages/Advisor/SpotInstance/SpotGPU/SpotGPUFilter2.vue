@@ -4,10 +4,10 @@
       <div class="filter__content">
         <div class="upclose"></div>
         <div class="filter__content__reset">
-          <button v-show="!on_second">
+          <button>
             <img src="@/assets/images/reset-01.svg" alt="다음 페이지" />
           </button>
-          <p>{{ on_second === true ? '필터편집' : $t('advisor.gpuSPot.gpuSpotFilter.reset') }}</p>
+          <p>{{ $t('advisor.gpuSPot.gpuSpotFilter.reset') }}</p>
         </div>
         <div class="filter__content__searchInput">
           <div class="filter__content__searchInput__account">
@@ -73,66 +73,20 @@
           />
         </div>
         <div class="filter__content__filter">
-          <SliderFilter
+          <SliderFilter2
             v-if="tab === 1"
             :addtion-filter-option="addtionFilterOption"
             :additional-filter-detail-options="additionalFilterDetailOptions"
             :current-tab="currentTab"
           />
-          <TableFilter1 v-else :selected-region="selectedRegion" />
+          <TableFilter v-else :selected-region="selectedRegion" />
         </div>
-        <div class="filter__content__apply" style="margin-top: 0px">
+        <div class="filter__content__apply">
           <button class="cl">닫기</button>
-          <button @click="onsecond">
-            {{ tab === 1 ? '인스턴스 유형 조회' : $t('advisor.gpuSPot.gpuSpotFilter.apply') }}
+          <button @click="[$emit('close-filter'), $emit('apply-filter')]">
+            {{ $t('advisor.gpuSPot.gpuSpotFilter.apply') }}
           </button>
         </div>
-      </div>
-    </div>
-    <div class="filter_second" style="display: none">
-      <i>인스턴스 타입을 하나 선택 적용하면 해당 인스턴스의 가격 및 중단 빈도 정보를 확인할 수 있습니다.</i>
-      <b>필터 선택 사항</b>
-      계약 및 계정 : 테크레디 계약 - TR-develop-alice(27272727271)<br />
-      리전: Asian Pacific (Seoul)<br />
-      인스턴스 패밀리 : P3<br />
-      vCPU : 최소 8 ~ 최대 32<br />
-      메모리 GIB : 최소 16 ~ 최대 48<br />
-      GPU 개수 : 최소 1개 ~ 최대 4개<br />
-      <div class="spot-tab-filter-container" style="margin-top: 23px">
-        <div class="left" style="padding-top: 3px; box-sizing: border-box">
-          <div class="required">
-            <div class="flex-container column" style="display: flex; flex-direction: column">
-              <div class="label-container" style="display: flex; flex-direction: row; align-items: center">
-                <p class="table__search-title">인스턴스 유형</p>
-                <img src="@/assets/images/required-01.svg" alt="required" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="right">
-          <div class="required" style="display: flex; flex-direction: column; align-items: flex-start">
-            <div class="input-wrapper" style="width: 100%">
-              <div class="input" style="width: 100%">
-                <img src="@/assets/images/search-01.svg" alt="search-icon" style="position: absolute; left: 10px" />
-                <input
-                  type="text"
-                  style="
-                    font-size: 1rem;
-                    color: #333;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    padding: 0.25rem 0.25rem 0.25rem 2rem;
-                  "
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <OnlyTable :selected-region="selectedRegion" />
-      <div class="filter__content__apply" style="margin-top: 22px">
-        <button class="cl">닫기</button>
-        <button>적용</button>
       </div>
     </div>
   </div>
@@ -140,16 +94,15 @@
 
 <script>
 import Select from '@/components/Select';
-import SliderFilter from '@/pages/Advisor/components/SliderFilter.vue';
-import TableFilter1 from '@/pages/Advisor/components/TableFilter1.vue';
-import OnlyTable from '@/pages/Advisor/components/OnlyTable.vue';
+import SliderFilter2 from '@/pages/Advisor/components/SliderFilter2.vue';
+import TableFilter from '@/pages/Advisor/components/TableFilter.vue';
 import DropDownMenuFilterRegion from '@/pages/Advisor/filterSelects/DropDownMenuFilterRegion.vue';
 import demoData from '../../../../../public/locales/gpudemo.json';
 import spotGPUService from '@/services/spotGPUService';
 import Tab from './sections/GPUFilterTab.vue';
 
 export default {
-  components: { DropDownMenuFilterRegion, TableFilter1, SliderFilter, Select, Tab, OnlyTable },
+  components: { DropDownMenuFilterRegion, TableFilter, SliderFilter2, Select, Tab },
   props: {
     currentTab: {
       type: String,
@@ -158,7 +111,6 @@ export default {
   },
   data() {
     return {
-      on_second: false,
       tab: 0,
       tabLabels: [
         this.$t('advisor.gpuSPot.gpuSpotFilter.instanceTypeDirectly'),
@@ -205,13 +157,6 @@ export default {
   },
 
   methods: {
-    onsecond() {
-      if (this.tab === 1) {
-        document.querySelector('.filter_second').style.display = 'block';
-        document.querySelector('.filter__wrapper').style.height = '655px';
-        this.on_second = true;
-      }
-    },
     switchTab(activeTab) {
       this.tab = activeTab;
     },

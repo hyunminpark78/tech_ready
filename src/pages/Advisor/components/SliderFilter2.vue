@@ -1,23 +1,27 @@
 <template>
-  <div class="filter-slider" style="margin-top: 14px; margin-bottom: 14px">
+  <div class="filter-slider">
     <div class="filter-slider__input">
-      <div class="instance-family">
-        <p class="title">{{ $t('advisor.gpuSPot.gpuSpotFilter.instanceFamily') }}</p>
-        <div class="input">
-          <Select
-            div-class="input-filter"
-            :data="gpuTypeInstanceFamily"
-            :text-getter="(item) => item.name"
-            :key-getter="(item) => item.id"
-            select-class="flex items-center justify-between w-full font-bold text-gray-700"
-            :placeholder="$t('advisor.gpuSPot.gpuSpotFilter.all')"
-            :arrow-src="require('@/assets/sl.png')"
-            arrow-class="ml-4"
-            option-list-class="absolute z-20 text-sm text-gray-700 bg-white border rounded border-primary-200"
-            option-list-item-class="px-5 py-2 cursor-pointer hover:bg-primary-300"
-            text-class="input-text"
-            option-list-style="width: 100%; left: 0px; overflow-y: auto; max-height: 300px"
-          />
+      <div class="left" style="padding-top: 12px; box-sizing: border-box">
+        <div class="required">
+          <div class="flex-container column" style="display: flex; flex-direction: column">
+            <div class="label-container" style="display: flex; flex-direction: row; align-items: center">
+              <p class="table__search-title">인스턴스 수</p>
+              <img src="@/assets/images/required-01.svg" alt="required" />
+              <input type="number" /> &nbsp; 개
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right" style="padding-top: 12px; box-sizing: border-box">
+        <div class="required" style="display: flex; flex-direction: column; align-items: flex-start">
+          <div class="input-wrapper" style="width: 100%">
+            <span style="font-size: 14px; font-weight: 400; color: #999999; margin-right: 8px">인스턴스 패밀리</span>
+            <select class="f">
+              <option>선택</option>
+              <option>선택</option>
+              <option>선택</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
@@ -124,39 +128,43 @@
           </div>
         </div>
       </div>
-      <div class="wrapper">
-        <div class="input-wrapper">
-          <p class="title">{{ $t('advisor.gpuSPot.gpuSpotFilter.filterProperties') }}</p>
-          <Select
-            div-class="input"
-            :data="addtionFilterOption"
-            :text-getter="(item) => item.name"
-            :key-getter="(item) => item.id"
-            select-class="flex items-center justify-between w-full font-bold text-gray-700"
-            placeholder="--선택--"
-            :arrow-src="require('@/assets/images/arrow-typ-02.svg')"
-            arrow-class="ml-4"
-            option-list-class="absolute z-20 text-sm text-gray-700 bg-white border rounded border-primary-200"
-            option-list-item-class="px-5 py-2 cursor-pointer hover:bg-primary-300"
-            text-class="input-text"
-            option-list-style="top: -6.5rem; left: 0px"
-            v-model="selectedAttribute"
-            @change="onSelectChange"
-          />
-        </div>
-        <button class="filter-btn" @click="handleFilterAttributeAddtion">속성 추가</button>
-        <img
-          src="@/assets/images/restart-icon.svg"
-          alt="다시 시작"
-          style="cursor: pointer; padding-right: 12px"
-          @click="clearSelectedAdditionAttributeOption"
-        />
+      <div class="last_selections added">
+        <select>
+          <option>필터속성</option>
+          <option>필터속성</option>
+          <option>필터속성</option>
+          <option>필터속성</option>
+        </select>
+        <select class="ga">
+          <option>선택</option>
+          <option>선택</option>
+          <option>선택</option>
+          <option>선택</option>
+        </select>
+        <button>속성 추가</button>
+        <div class="alrim">!</div>
+      </div>
+      <div class="last_selections">
+        <select>
+          <option>필터속성</option>
+          <option>필터속성</option>
+          <option>필터속성</option>
+          <option>필터속성</option>
+        </select>
+        <select class="ga">
+          <option>선택</option>
+          <option>선택</option>
+          <option>선택</option>
+          <option>선택</option>
+        </select>
+        <button>속성 추가</button>
+        <div class="alrim">!</div>
       </div>
 
       <div class="warning">
         <div class="required">
           <img src="@/assets/images/required-01.svg" alt="요구해요" />
-          <p style="font-size: 0.75rem; color: #999">
+          <p style="font-size: 11px; color: #999">
             최소 3가지 인스턴스를 선택하셔야 합니다. 3가지 이하의 인스턴스를 조회할 경우 낮은 배치 점수로 리턴됩니다.
           </p>
         </div>
@@ -273,5 +281,159 @@ export default {
   border-radius: 8px;
   border: 1px solid #00a5ed;
   background: #eefaff;
+}
+</style>
+<style lang="scss">
+.spot-tab-filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: #5ba9ca;
+
+  .left,
+  .right {
+    width: 50%;
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .input {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .input input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .input img {
+    position: absolute;
+    left: 0.5rem;
+  }
+
+  .input span {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+.table__search .input-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.table__search .input-wrapper .input {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 16px 6px 32px;
+  max-width: 262px;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #e9ebed;
+  background: #fff;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+}
+
+.warning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.75rem;
+  color: #999;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.ag-header-group-text {
+  text-align: center !important;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 18px;
+  font-weight: bold !important;
+  color: #5ba9ca;
+  font-family: 'Noto Sans KR';
+}
+
+.ag-header-group-cell-label {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ag-header-cell-label {
+  justify-content: center;
+}
+
+.filter-grid .ag-body-viewport {
+  min-height: 186px;
+  text-align: center;
+  height: 210px;
+  overflow: auto !important;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #a8a8a8;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+  .ag-center-cols-viewport {
+    overflow: auto !important;
+  }
+}
+
+.ag-root-wrapper-body .no-display-in-grid {
+  display: none !important;
+}
+
+.example-wrapper .gpu-header-merge {
+  height: 100px !important;
+  position: fixed !important;
+  top: 0px;
+  border-top: none !important;
+}
+
+.example-wrapper .ag-header-group-cell-no-group {
+  height: 0px !important;
+}
+
+.ag-row .ag-cell {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+  line-height: 24px;
+}
+
+.box-wrap .flex.items-center:last-child {
+  padding-bottom: 0;
+  margin: 10px 0;
 }
 </style>

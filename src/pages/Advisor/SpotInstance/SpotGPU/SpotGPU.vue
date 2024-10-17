@@ -13,10 +13,11 @@
       <Section>
         <SectionMain style="display: flex; flex-direction: column; gap: 20px">
           <div style="margin-top: 0; position: relative">
-            <div class="flex">
+            <div class="flex" style="z-index: 22; position: relative">
               <SelectCloudFilter
                 ref="cloud"
                 style-parent="width: fit-content; height: auto; border-radius: 8px; padding-right: 0px"
+                class="jh_special"
                 :csp-typ-cd-from-parent="filter.cspTypCd"
                 :is-disabled="true"
               ></SelectCloudFilter>
@@ -49,7 +50,7 @@
               </div>
               <div style="flex: 1"></div>
             </div>
-            <div class="flex" style="position: absolute; z-index: 1000; top: 4rem; left: 1.83rem">
+            <div class="flex" style="position: absolute; z-index: 10; top: 60px; left: 20px">
               <button
                 v-if="currentTab !== 'useStatus'"
                 class="flex items-center justify-center"
@@ -61,10 +62,10 @@
                   gap: '0px',
                   width: '56px',
                   height: '56px',
-                  boxShadow: '4px 4px 10px rgba(0,0,0,0.2)',
+                  boxShadow: '0px 2px 20px rgba(0,165,237,0.12)',
                   border: '0px solid #d4d4d4',
                 }"
-                @click="isOpenFilter = !isOpenFilter"
+                @click="filtering"
               >
                 <img
                   :src="
@@ -80,7 +81,13 @@
                 @close-filter="closeFilter"
                 @apply-filter="applyFilter"
                 :current-tab="currentTab"
-                v-if="currentTab !== 'useStatus' && isOpenFilter"
+                v-if="currentTab !== 'useStatus' && currentTab === 'interruptionFrequency' && isOpenFilter"
+              />
+              <SpotGPUFilter2
+                @close-filter="closeFilter"
+                @apply-filter="applyFilter"
+                :current-tab="currentTab"
+                v-if="currentTab !== 'useStatus' && currentTab !== 'interruptionFrequency' && isOpenFilter2"
               />
             </div>
             <div id="geo-map" ref="gpuSpotMapChart" class="geo-map relative"></div>
@@ -89,54 +96,56 @@
               class="spot-gpu-panel-container"
               style="width: fit-content"
             >
-              <div class="title-panel">{{ $t('advisor.gpuSPot.spotScoreNote.title') }}</div>
+              <div class="title-panel">
+                {{ $t('advisor.gpuSPot.spotScoreNote.title') }}
+              </div>
               <table class="spot-gpu-panel">
                 <thead class="header-panel">
-                <tr>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
-                      {{ $t('advisor.gpuSPot.spotScoreNote.numberOfInstances') }}
-                    </p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">vCPU</p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
-                      {{ $t('advisor.gpuSPot.spotScoreNote.memory') }}
-                    </p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
-                      {{ $t('advisor.detailTable.CPUArchitecture') }}
-                    </p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px">
-                      {{ $t('advisor.detailTable.acceleratorType') }}
-                    </p>
-                  </th>
-                </tr>
+                  <tr>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
+                        {{ $t('advisor.gpuSPot.spotScoreNote.numberOfInstances') }}
+                      </p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">vCPU</p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
+                        {{ $t('advisor.gpuSPot.spotScoreNote.memory') }}
+                      </p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
+                        {{ $t('advisor.detailTable.CPUArchitecture') }}
+                      </p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px">
+                        {{ $t('advisor.detailTable.acceleratorType') }}
+                      </p>
+                    </th>
+                  </tr>
                 </thead>
                 <tbody class="body-panel">
-                <tr>
-                  <td class="spot-gpu-cell" style="text-align: center">10개</td>
-                  <td class="spot-gpu-cell" style="text-align: center">4~</td>
-                  <td class="spot-gpu-cell" style="text-align: center">8~</td>
-                  <td class="spot-gpu-cell" style="text-align: center">
-                    <div style="display: flex; flex-direction: column">
-                      <p>x86_64</p>
-                      <p>arm64</p>
-                    </div>
-                  </td>
-                  <td class="spot-gpu-cell" style="text-align: center">
-                    <div style="display: flex; flex-direction: column">
-                      <p>A100</p>
-                      <p>H100</p>
-                      <p>V100</p>
-                    </div>
-                  </td>
-                </tr>
+                  <tr>
+                    <td class="spot-gpu-cell" style="text-align: center">10개</td>
+                    <td class="spot-gpu-cell" style="text-align: center">4~</td>
+                    <td class="spot-gpu-cell" style="text-align: center">8~</td>
+                    <td class="spot-gpu-cell" style="text-align: center">
+                      <div style="display: flex; flex-direction: column">
+                        <p>x86_64</p>
+                        <p>arm64</p>
+                      </div>
+                    </td>
+                    <td class="spot-gpu-cell" style="text-align: center">
+                      <div style="display: flex; flex-direction: column">
+                        <p>A100</p>
+                        <p>H100</p>
+                        <p>V100</p>
+                      </div>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -144,29 +153,30 @@
               <div class="title-panel">기준 정보</div>
               <table class="spot-gpu-panel">
                 <thead class="header-panel">
-                <tr>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">인스턴스 타입</p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">운영체제</p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px">기준일시</p>
-                  </th>
-                </tr>
+                  <tr>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">인스턴스 타입</p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">운영체제</p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px">기준일시</p>
+                    </th>
+                  </tr>
                 </thead>
                 <tbody class="body-panel">
-                <tr>
-                  <td class="spot-gpu-cell" style="text-align: center">
-                    {{ selectedType === 0 ? 'g4dn.xlarge' : 'g5.2xlarge' }}
-                  </td>
-                  <td class="spot-gpu-cell" style="text-align: center">Linux/UNIX</td>
-                  <td class="spot-gpu-cell" style="text-align: center">{{ getFormattedYesterdayDate }}</td>
-                </tr>
+                  <tr>
+                    <td class="spot-gpu-cell" style="text-align: center">
+                      {{ selectedType === 0 ? 'g4dn.xlarge' : 'g5.2xlarge' }}
+                    </td>
+                    <td class="spot-gpu-cell" style="text-align: center">Linux/UNIX</td>
+                    <td class="spot-gpu-cell" style="text-align: center">{{ getFormattedYesterdayDate }}</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
+            <div class="plmi" @click="tablebn"></div>
             <div v-if="usageTabTableTooltipVisible" class="spot-gpu-panel-container" style="width: fit-content">
               <div class="title-panel">
                 {{
@@ -175,47 +185,52 @@
                   formatDate(usageTableSummaryData.baseDate) +
                   ')'
                 }}
+                <a
+                  href="#"
+                  style="font-size: 13px; font-weight: normal; cursor: pointer; color: gray; margin-left: 10px"
+                  >추천 상세 보기 &gt;</a
+                >
               </div>
               <table class="spot-gpu-panel">
                 <thead class="header-panel">
-                <tr>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
-                      {{ $t('advisor.gpuSPot.gpuUsageTooltip.totalInstances') }}
-                    </p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
-                      {{ $t('advisor.gpuSPot.gpuUsageTooltip.spotInstance') }}
-                    </p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
-                      {{ $t('advisor.gpuSPot.gpuUsageTooltip.onDemandInstance') }}
-                    </p>
-                  </th>
-                  <th class="spot-gpu-header">
-                    <p style="padding: 0 20px">{{ $t('advisor.gpuSPot.gpuUsageTooltip.totalUse') }}</p>
-                  </th>
-                </tr>
+                  <tr>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
+                        {{ $t('advisor.gpuSPot.gpuUsageTooltip.totalInstances') }}
+                      </p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
+                        {{ $t('advisor.gpuSPot.gpuUsageTooltip.spotInstance') }}
+                      </p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px; border-right: 1px solid rgba(26, 227, 187, 0.2)">
+                        {{ $t('advisor.gpuSPot.gpuUsageTooltip.onDemandInstance') }}
+                      </p>
+                    </th>
+                    <th class="spot-gpu-header">
+                      <p style="padding: 0 20px">{{ $t('advisor.gpuSPot.gpuUsageTooltip.totalUse') }}</p>
+                    </th>
+                  </tr>
                 </thead>
                 <tbody class="body-panel">
-                <tr>
-                  <td class="spot-gpu-cell" style="text-align: center">
-                    {{ usageTableSummaryData.instanceCountTotal }}개
-                  </td>
-                  <td class="spot-gpu-cell" style="text-align: center">
-                    {{ usageTableSummaryData.spotCountTotal }}개 ({{
-                      usageTableSummaryData.spotTotalPercent.toFixed(0)
-                    }}%)
-                  </td>
-                  <td class="spot-gpu-cell" style="text-align: center">
-                    {{ usageTableSummaryData.onDemandCountTotal }}개 ({{
-                      usageTableSummaryData.onDemandTotalPercent.toFixed(0)
-                    }}%)
-                  </td>
-                  <td class="spot-gpu-cell" style="text-align: center">{{ usageTableSummaryData.regionCount }}개</td>
-                </tr>
+                  <tr>
+                    <td class="spot-gpu-cell" style="text-align: center">
+                      {{ usageTableSummaryData.instanceCountTotal }}개
+                    </td>
+                    <td class="spot-gpu-cell" style="text-align: center">
+                      {{ usageTableSummaryData.spotCountTotal }}개 ({{
+                        usageTableSummaryData.spotTotalPercent.toFixed(0)
+                      }}%)
+                    </td>
+                    <td class="spot-gpu-cell" style="text-align: center">
+                      {{ usageTableSummaryData.onDemandCountTotal }}개 ({{
+                        usageTableSummaryData.onDemandTotalPercent.toFixed(0)
+                      }}%)
+                    </td>
+                    <td class="spot-gpu-cell" style="text-align: center">{{ usageTableSummaryData.regionCount }}개</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -269,11 +284,12 @@
 <script>
 import Section, { SectionLnb, SectionMain, SectionNewHeader } from '@/components/Section';
 import { Tooltip } from '@/pages/Advisor/components';
-import SelectCloudFilter from '@/components/Select/SelectCloudFilter.vue';
+import SelectCloudFilter from '@/components/Select/SelectCloudFilter2.vue';
 import { mapState } from 'vuex';
 import resourceOptiService from '@/services/resourceOptiService';
 import { i18n } from '../../../../../public/locales/i18n';
 import SpotGPUFilter from '@/pages/Advisor/SpotInstance/SpotGPU/SpotGPUFilter.vue';
+import SpotGPUFilter2 from '@/pages/Advisor/SpotInstance/SpotGPU/SpotGPUFilter2.vue';
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4maps from '@amcharts/amcharts4/maps';
 import am4geodata_worldLow from '@amcharts/amcharts4-geodata/worldLow';
@@ -292,11 +308,13 @@ export default {
     SelectCloudFilter,
     SectionNewHeader,
     SpotGPUFilter,
+    SpotGPUFilter2,
   },
   data() {
     return {
       tab: 1,
       isOpenFilter: false,
+      isOpenFilter2: false,
       hideOpenFilter: false,
       usageTabTooltipVisible: false,
       usageTabTableTooltipVisible: false,
@@ -441,40 +459,53 @@ export default {
       }
     },
     updateUseStatusTooltip(data) {
-      this.imageSeries.mapImages.template.tooltipHTML = ``;
-      //const familyTags = this.getFamilyTags(data.instanceTypeFamily);
-      //   this.imageSeries.mapImages.template.tooltipHTML = `
-      // <div class="spot-usage-detail-tooltip">
-      //   <div class="tooltip-title-container">
-      //     <span class="title">리전 사용 현황</span>
-      //     <span class="standardDate">(기준일 ${this.getFormattedYesterdayDate()})</span>
-      //   </div>
-      //   <div class="region-title-container">
-      //     <span class="name">{region}</span>
-      //     <div class="detailBtn" @click="handleRecommendDetailBtnClick">
-      //       추천 상세 보기
-      //       <svg width="7" height="10" viewBox="0 0 7 10" fill="none">
-      //         <path d="M1.39844 1L5.39844 5L1.39844 9" stroke="#999999" stroke-linecap="round" />
-      //       </svg>
-      //     </div>
-      //   </div>
-      //   <div class="tooltip-detail-info-container">
-      //   <div class="title">가용 영역</div>
-      //   <div class="value">{availabilityZones}</div>
-      //   </div>
-      //   <div class="tooltip-detail-info-container">
-      //   <div class="title">인스턴스 갯수</div>
-      //   <div class="value">{instanceCountTotal}</div>
-      //   </div>
-      //   <div class="tooltip-detail-info-container">
-      //   <div class="title">인스턴스 분포</div>
-      //   <div class="value">{onDemandCountTotal}</div>
-      //   </div>
-      //   <div class="tooltip-detail-info-container">
-      //   <div class="title">인스턴스 타입</div>
-      //   <div class="value">{availabilityZones}</div>
-      //   </div>
-      // </div>`;
+      this.imageSeries.mapImages.template.adapter.add('tooltipHTML', (html, target) => {
+        let data = target.dataItem.dataContext;
+
+        var availabilityZones = '12345';
+
+        // Replace placeholders in the tooltip HTML
+        html = html.replace(
+          '<div class="tooltip_area_avail" data-spot-avail></div>',
+          `<div class="tooltip_area_avail">${availabilityZones}</div>`
+        );
+
+        return html;
+      });
+
+      // Define the structure of the tooltip
+      this.imageSeries.mapImages.template.tooltipHTML = `
+  <div class="tooltip-spot">
+    <h4>{region}</h4>
+    <span style="font-size:12px;font-weight:400;color:#333;">ap-northeast-2c</span>
+    <table>
+      <tbody>
+      <tr>
+        <th></th>
+        <th>인스턴스 사용액</th>
+        
+        <th>인스턴스 개수</th>
+        </tr>
+        <tr>
+          <th>합계</th>
+          <td>￦3,452,049</td>
+          <td>40개</td>
+          </tr>
+          <tr>
+          <th>온디맨드</th>
+          <td>￦2,948,392 (65%)</td>
+          <td>30개 (87%)</td>
+          </tr>
+          <tr>
+            <th>Spot</th>
+            <td><b>￦503,657 (35%)</b></td> 
+            <td><b>10개 (13%)</b></td>  
+          </tr>
+        </tbody>
+    </table>
+   
+  </div>
+`;
     },
     displayIrruptionRate(data) {
       if (data < 5) {
@@ -561,7 +592,7 @@ export default {
         <label>중단빈도</label>
         <div class="tooltip_irruptionRate" data-irruptionRate></div>
       </div>
-      <div class="tooltip_content" style="border-bottom: none">
+      <div class="tooltip_content" style="border-bottom: none !important;margin-bottom:10px;">
         <label>온디맨드 비용(h)</label>
         <p>￦{onDemandBill}</p>
       </div>
@@ -611,19 +642,12 @@ export default {
       //       ${this.getTooltipContent('배치 점수', '4')}
       //     </div></div>`;
       this.imageSeries.mapImages.template.tooltipHTML = `
-<div class="tooltip-spot">
+<div class="tooltip-spot" style="border-bottom:0px solid #d4d4d4;padding-bottom:0px;">
     <h4>{region}</h4>
-  <div class="tooltip_content">
-    <label>{availabilityZone}</label>
+  <div class="tooltip_content" style="font-size:12px;font-weight:400;color:#4a4a4a;border-bottom:0px solid #d4d4d4 !important;">
+    가용영역 <label style="font-size:12px;font-weight:700;color:#00A5ED !important;margin-left:23px;">{availabilityZone}</label>
   </div>
-  <div class="tooltip_content">
-    <label>배치 점수 순위</label>
-    <p>{ranking}</p>
-  </div>
-  <div class="tooltip_content">
-    <label>배치 점수</label>
-    <p>{score}</p>
-  </div>
+  
     </div>`;
     },
     getFamilyTags(instanceTypeFamily) {
@@ -699,18 +723,31 @@ export default {
 
       // Add zoom control
       chart.zoomControl = new am4maps.ZoomControl();
-      chart.zoomControl.align = "right"; chart.zoomControl.valign = "top";
-
+      chart.zoomControl.align = 'right';
+      chart.zoomControl.valign = 'top';
+      chart.zoomControl.plusButton.background.fill = 'white';
+      chart.zoomControl.minusButton.background.fill = 'white';
+      chart.zoomControl.minusButton.background.strokeWidth = '0.4';
+      chart.zoomControl.minusButton.background.stroke = '#25b5f3';
+      chart.zoomControl.plusButton.background.strokeWidth = '0.4';
+      chart.zoomControl.plusButton.background.stroke = '#25b5f3';
+      chart.zoomControl.plusButton.label.fill = '#1b97cd';
+      chart.zoomControl.minusButton.label.fill = '#1b97cd';
       let homeButton = new am4core.Button();
-      homeButton.events.on("hit", function(){
+      homeButton.events.on('hit', function () {
         chart.goHome();
       });
+      console.log(homeButton);
       homeButton.icon = new am4core.Sprite();
       homeButton.padding(7, 5, 7, 5);
       homeButton.margin(0, 0, 4, 0);
       homeButton.width = 30;
-      homeButton.icon.path = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+      homeButton.background.fill = am4core.color('rgba(0,0,0,0)');
+      homeButton.background.strokeWidth = '0';
+      homeButton.icon.path =
+        'M19.9,8.8c-.4-2.3-1.6-4.4-3.4-6-1.8-1.5-4.1-2.4-6.4-2.4-.6,0-1,.4-1,1s.4,1,1,1c1.9,0,3.7.7,5.2,1.9,1.4,1.2,2.4,2.9,2.7,4.8.3,1.9,0,3.8-1,5.4-1,1.6-2.5,2.9-4.2,3.5-1.8.6-3.7.6-5.5,0-1.8-.7-3.2-1.9-4.2-3.6-.9-1.6-1.2-3.6-.9-5.4.3-1.4.9-2.7,1.9-3.8v1.8c0,.6.4,1,1,1s1-.4,1-1V3c0-.6-.4-1-1-1H1C.4,2,0,2.4,0,3s.4,1,1,1h1.4C1.3,5.3.5,6.9.2,8.6c-.4,2.3,0,4.7,1.1,6.8,1.2,2.1,3,3.6,5.2,4.5,2.2.8,4.6.9,6.9,0,2.2-.8,4.1-2.3,5.3-4.4,1.2-2,1.6-4.4,1.2-6.8Z';
       // homeButton.marginBottom = 500;
+      homeButton.icon.fill = '#00A5ED';
       homeButton.parent = chart.zoomControl;
       homeButton.insertBefore(chart.zoomControl.plusButton);
 
@@ -721,25 +758,25 @@ export default {
 
       // Configure series
       let polygonTemplate = polygonSeries.mapPolygons.template;
-      polygonTemplate.tooltipText = "{name}";
+      polygonTemplate.tooltipText = '';
       polygonTemplate.polygon.fillOpacity = 0.6;
 
       // Create hover state and set alternative fill color
-      let hs = polygonTemplate.states.create("hover");
-      hs.properties.fill = chart.colors.getIndex(0);
+      // let hs = polygonTemplate.states.create('hover');
+      // hs.properties.fill = chart.colors.getIndex(0);
 
       // imageSeries.mapImages.template.propertyFields.url = 'url';
       // imageSeries.fill = am4core.color('#000');
       this.imageSeries = chart.series.push(new am4maps.MapImageSeries());
       this.imageSeries.mapImages.template.propertyFields.longitude = 'longitude';
       this.imageSeries.mapImages.template.propertyFields.latitude = 'latitude';
-      this.imageSeries.tooltip.background.stroke = am4core.color('rgba(26, 227, 187, 0.2)');
-      this.imageSeries.tooltip.background.strokeWidth = 1;
+      //this.imageSeries.tooltip.background.stroke = am4core.color('rgba(26, 227, 187, 0.2)');
+      //this.imageSeries.tooltip.background.strokeWidth = 1;
       this.imageSeries.tooltip.background.cornerRadius = 10;
-      this.imageSeries.tooltip.background.strokeOpacity = 1;
+      //this.imageSeries.tooltip.background.strokeOpacity = 1;
       this.imageSeries.tooltip.getFillFromObject = false;
-      this.imageSeries.tooltip.background.fill = am4core.color('rgba(37, 43, 45, 0.85)');
-
+      this.imageSeries.tooltip.background.fill = am4core.color('rgba(255, 255, 255, 1)');
+      polygonTemplate.fill = am4core.color('#C7D0D4');
       // var zoomOut = chart.tooltipContainer.createChild(am4core.Image);
       // // zoomOut.disabled = true;
       // // var zoomImage = chart.tooltipContainer.createChild(am4core.Image);
@@ -839,7 +876,7 @@ export default {
           },
         },
       ];
-
+      this.chartZoom();
       return chart;
     },
     async fetchAndUpdateMapData() {
@@ -917,7 +954,7 @@ export default {
           outerScale: 16,
           innerScale: 8,
           //color: am4core.color('#fc1c03'),
-          color: this.colorSet.next()
+          color: this.colorSet.next(),
           // fill: am4core.color('#fc1c03'),
           // stroke: am4core.color('#fc1c03'),
         };
@@ -936,23 +973,47 @@ export default {
     createOuterCircle: function () {
       const outerCircle = this.imageSeries.mapImages.template.createChild(am4core.Circle);
       outerCircle.propertyFields.radius = 'outerScale';
-      //outerCircle.fill = am4core.color('#fc03a5');
-      outerCircle.propertyFields.fill = "color";
-      outerCircle.fillOpacity = 0.3;
+      outerCircle.fill = am4core.color('#A166F1');
+      outerCircle.propertyFields.fill = '#A166F1';
+      outerCircle.fillOpacity = 0.28;
       outerCircle.strokeWidth = 1;
       outerCircle.verticalCenter = 'middle';
       outerCircle.horizontalCenter = 'middle';
+      outerCircle.nonScaling = true;
+    },
+    filtering: function () {
+      if (this.currentTab === 'interruptionFrequency') {
+        this.isOpenFilter = true;
+        this.isOpenFilter2 = false;
+        return false;
+      } else {
+        this.isOpenFilter = false;
+        this.isOpenFilter2 = true;
+      }
     },
     createInnerCircle: function () {
       const innerCircle = this.imageSeries.mapImages.template.createChild(am4core.Circle);
       innerCircle.propertyFields.radius = 'innerScale';
-      //innerCircle.fill = am4core.color('#fc03a5');
-      innerCircle.propertyFields.fill = "color";
+      innerCircle.fill = am4core.color('#A166F1');
+      innerCircle.propertyFields.fill = '#A166F1';
       //innerCircle.propertyFields.stroke = "color";
-      innerCircle.fillOpacity = 0.7;
+      innerCircle.fillOpacity = 0.6;
       innerCircle.strokeWidth = 1;
       innerCircle.verticalCenter = 'middle';
       innerCircle.horizontalCenter = 'middle';
+      innerCircle.nonScaling = true;
+
+      // 원 안에 숫자를 표시하기 위한 레이블 추가
+      const label = this.imageSeries.mapImages.template.createChild(am4core.Label);
+      label.text = '{score}'; // 데이터에 연결된 값 표시
+      ///label.text = "333";  // 데이터에 연결된 값 표시
+      label.fill = am4core.color('#ffffff'); // 텍스트 색상 (검정)
+      label.fontSize = 12; // 텍스트 크기
+      label.horizontalCenter = 'middle'; // 가로 중앙 정렬
+      label.verticalCenter = 'middle'; // 세로 중앙 정렬
+      //label.fontWeight = "bold";
+      label.nonScaling = true; // 확대/축소에 따라 크기 변화하지 않음
+
       innerCircle.events.on('inited', (event) => this.animateOuterBullet(event.target));
     },
     animateOuterBullet: function (circle) {
@@ -960,7 +1021,7 @@ export default {
       let animation = circle.animate(
         [
           { property: 'radius', from: 24, to: circle.radius }, // Adjust the to value as needed
-          { property: 'fillOpacity', from: 0.7, to: 0.3 },
+          { property: 'fillOpacity', from: 1, to: 0.7 },
         ],
         2000,
         am4core.ease.circleOut
@@ -990,7 +1051,23 @@ export default {
     },
     goHome(zoom) {
       this.geoChart.goHome();
+      this.chartZoom();
       //chart.zoomToGeoPoint({ latitude: regionSereies.latitude, longitude: regionSereies.longitude }, zoom);
+    },
+    chartZoom() {
+      var chart = this.geoChart;
+      //chart.zoomToGeoPoint({ latitude: regionSereies.latitude, longitude: regionSereies.longitude }, zoom);
+
+      setTimeout(function () {
+        // 확대할 위치 설정 (예: 서울, 한국)
+        var target = {
+          latitude: 37.5665, // 위도 (서울)
+          longitude: 126.978, // 경도 (서울)
+        };
+
+        // 확대 실행: 특정 위치로 이동하고 줌 레벨을 설정 (예: 줌 레벨 5)
+        chart.zoomToGeoPoint(target, 2, true); // true는 애니메이션 효과
+      }, 1000); // 2초 지연 (2000ms)
     },
     beforeDestroy() {
       if (this.geoChart) {
@@ -1239,6 +1316,15 @@ export default {
     },
     formatDate(date) {
       return moment(date).format('YYYY.MM.DD');
+    },
+    tablebn(e) {
+      if (e.target.classList.contains('on') === false) {
+        document.querySelector('.spot-gpu-panel-container').style.display = 'none';
+        e.target.classList.add('on');
+      } else {
+        document.querySelector('.spot-gpu-panel-container').style.display = 'block';
+        e.target.classList.remove('on');
+      }
     },
   },
 };
